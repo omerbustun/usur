@@ -1,9 +1,11 @@
+from typing import Pattern
 from selenium import webdriver
 import time
 import json
-import sys
+import re
 
 driver = webdriver.Chrome()
+pattern = 'https:\/\/(.*).com.tr'
 
 with open('site_list.json', "r") as json_file:
     data = json.load(json_file)
@@ -15,9 +17,9 @@ for site in data["site"]:
     print (site)
     print(type(site))
     time.sleep(3)
-    filename = "%s" % site
+    filename = re.match(pattern, site)
     print (filename)
-    driver.save_screenshot(f"{filename}.png")
+    driver.save_screenshot(filename)
 
 
 
