@@ -1,17 +1,19 @@
 from selenium import webdriver
+import selenium
+import sys, os
 import time
-#browser exposes an executable file
-#Through Selenium test we will invoke the executable file which will then
-#invoke actual browser
+from selenium.webdriver.chrome.options import Options
+
 driver = webdriver.Chrome()
-# to maximize the browser window
-driver.maximize_window()
-#get method to launch the URL
-driver.get("https://eksim.com.tr")
-#to refresh the browser
-driver.refresh()
-#to get the screenshot of complete page
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+
+URL = 'https://eksim.com.tr'
+driver.get(URL)
 time.sleep(3)
-driver.save_screenshot("screenshot_tutorialspoint.png")
-#to close the browser
-driver.close()
+#driver.save_screenshot('ss{0}.png'.format(URL))
+driver.save_screenshot('test.png')
+
+driver.quit()
+
