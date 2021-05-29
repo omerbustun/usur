@@ -1,17 +1,24 @@
 from selenium import webdriver
 import time
-#browser exposes an executable file
-#Through Selenium test we will invoke the executable file which will then
-#invoke actual browser
+import json
+import sys
+
 driver = webdriver.Chrome()
-# to maximize the browser window
-driver.maximize_window()
-#get method to launch the URL
-driver.get("https://dedas.com.tr")
-#to refresh the browser
-driver.refresh()
-#to get the screenshot of complete page
-time.sleep(3)
-driver.save_screenshot("screenshot_tutorialspoint.png")
-#to close the browser
+
+with open('site_list.json', "r") as json_file:
+    data = json.load(json_file)
+
+for site in data["site"]:
+    #driver.maximize_window()
+    driver.get(site)
+    driver.refresh()
+    print (site)
+    print(type(site))
+    time.sleep(3)
+    filename = "%s" % site
+    print (filename)
+    driver.save_screenshot(f"{filename}.png")
+
+
+
 driver.close()
