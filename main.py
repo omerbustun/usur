@@ -29,3 +29,5 @@ for site in data["site"]:
     driver.save_screenshot((filename.group(1) + '.png'))
 
 driver.close()
+
+
