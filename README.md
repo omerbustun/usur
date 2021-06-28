@@ -3,5 +3,5 @@
 
 - Site adreslerini JSON dosyasından okur. :heavy_check_mark:
 - Selenium ile bu sitelerin anasayfalarının ekran görüntünüsünü alarak ilgili klasöre kaydeder. :heavy_check_mark:
-- OpenCV aracılığıyla güncel görüntüyü referans görüntü ile karşılaştırır.
+- OpenCV aracılığıyla güncel görüntüyü referans görüntü ile karşılaştırır. :heavy_check_mark:
 - Fark tespit ettiği durumda e-posta ile bildirim gönderir.
