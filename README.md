@@ -9,3 +9,5 @@
 - Veri tabanı entegrasyonu
 - Web panel üzerinden istatistik sunma
 - Multi-site desteği
+- Cross-Platform desteği
+- Moduler yapı
