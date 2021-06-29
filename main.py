@@ -75,7 +75,7 @@ for site in data["site"]:
         cv2.imshow("Modified", imageB)
         cv2.waitKey(0)
 
-    os.replace(f'/{(filename.group(1)}.png', f'{dir,archive_dir}')
+    os.replace(f'/{(filename.group(1))}.png', f'{dir,archive_dir}')
 
 driver.close()
 
