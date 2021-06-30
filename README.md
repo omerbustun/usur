@@ -13,7 +13,7 @@
 - Moduler yapı
 
 
-##Dashboard Özellikler
+## Dashboard Özellikler
 
 - Takip edilicek sitelerin eklenme ve çıkarılabilmesi.
 - Arşiv fotoğraflarının görüntülenebilmesi.
