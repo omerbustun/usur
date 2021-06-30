@@ -23,3 +23,8 @@
 - Sign-in
 - Log Ekranı
 - Site özelinde tarama periodu ayarı
+
+### Active Virtual Env
+```
+venv\Scripts\activate
+```
