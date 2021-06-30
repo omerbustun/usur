@@ -7,9 +7,14 @@ import os
 from skimage.metrics import structural_similarity as ssim
 import imutils
 import cv2
+import configparser
 
-dir = "C:/Users/admin/Documents/GitHub/AbiHacklendikGaliba/"
-archive_dir = "arsiv"
+parser = configparser.ConfigParser()
+parser.read("config.txt")
+
+
+dir = parser.get("directory", "dir")
+archive_dir = parser.get("directory", "archive_dir")
 nowTime = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M') # Now
 
 if not os.path.exists(dir + f'{archive_dir}/' + nowTime):

@@ -5,9 +5,14 @@ import json
 import re
 import os
 from skimage.metrics import structural_similarity as ssim
+import configparser
 
-dir = "C:/Users/admin/Documents/GitHub/AbiHacklendikGaliba/"
-based_images_dir = "/based_images"
+parser = configparser.ConfigParser()
+parser.read("config.txt")
+
+
+dir = parser.get("directory", "dir")
+based_images_dir = parser.get("directory", "based_images_dir")
 
 driver = webdriver.Chrome()
 
