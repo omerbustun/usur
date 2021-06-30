@@ -30,3 +30,4 @@ test2.py
 *.png
 *.exe
 .vscode
+__pycache__

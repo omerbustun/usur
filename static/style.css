@@ -1,0 +1,25 @@
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+  
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #291c1f, #3f1c24);
+  background: linear-gradient(to right, #571524, #68061d);
+  font-family: 'Roboto', sans-serif;
+}
+.tableBox {
+    
+  width: 300px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px;
+    
+}
+  
