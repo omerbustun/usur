@@ -2,3 +2,4 @@
 dir = C:/Users/TAW/Documents/GitHub/AbiHacklendikGaliba/
 based_images_dir = based_images
 archive_dir = arsiv
+based_html_dir = based_html
