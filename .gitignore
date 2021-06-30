@@ -29,5 +29,5 @@ test1.py
 test2.py
 *.png
 *.exe
-.vscode
+.vscode 
 __pycache__
