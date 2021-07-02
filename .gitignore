@@ -25,7 +25,7 @@ htmlcov/
 *,cover
 
 
- *.png
- *.exe
- .vscode 
- __pycache__
+*.png
+*.exe
+.vscode 
+__pycache__
