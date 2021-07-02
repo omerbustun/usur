@@ -24,7 +24,7 @@
 - Log Ekranı
 - Site özelinde tarama periodu ayarı
 
-### Active Virtual Env
+### Activate Virtual Env
 ```
 venv\Scripts\activate
 ```
