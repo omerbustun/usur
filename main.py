@@ -74,12 +74,12 @@ for site in data["site"]:
     
     # show the output images
     
-    if score <= 0.998:
+    if score <= 0.998: 
         print("Abi hacklendik galiba.")
         cv2.imshow("Original", imageA)
         cv2.imshow("Modified", imageB)
         cv2.waitKey(0)
-
+         
     os.replace(f'/{(filename.group(1))}.png', f'{dir,archive_dir}')
 
 driver.close()

@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head id="Head1">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1" name="viewport"/>
+  <meta charset="utf-8" content="text/html;" http-equiv="content-type"/>
+  <meta charset="utf-8" content="text/html;" http-equiv="content-type"/>
+  <meta charset="utf-8" content="text/html;" http-equiv="content-type"/>
+  <title>
+   Dicle Elektrik
+  </title>
+  <link href="/resimler/favicon.ico" rel="shortcut icon"/>
+  <link href="/resimler/favicon.ico" rel="icon"/>
+  <link href="style/fonts.css" rel="stylesheet"/>
+  <link href="style/style.css?v=2" rel="stylesheet"/>
+  <link href="style/jPages.css" rel="stylesheet" type="text/css"/>
+  <script src="JS/jquery-1.8.3.min.js">
+  </script>
+  <script src="JS/jquery-ui-1.10.2.custom.min.js">
+  </script>
+  <script>
+   (function (i, s, o, g, r, a, m) {
+
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+
+                (i[r].q = i[r].q || []).push(arguments)
+
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-41218718-7', 'dicleedas.com.tr');
+
+        ga('send', 'pageview');
+  </script>
+  <style>
+   .veriAltBar {
+
+            min-height: 40px;
+
+            position: fixed;
+
+            left: 0;
+
+            bottom: 0;
+
+            z-index: 999999;
+
+            background: #fff;
+
+            border-top: 1px solid #f3f3f3;
+
+            display: -webkit-box;
+
+            display: -moz-box;
+
+            -webkit-box-align: center;
+
+            -moz-box-align: center;
+
+            width:100%;
+
+            text-align:center;
+
+        }
+
+
+
+            .veriAltBar .txt {
+
+                width: 100%;
+
+                margin: 0 auto;
+
+                padding: 0 40px 0 10px;
+
+                position: relative;
+
+                font-weight: normal;
+
+            }
+  </style>
+ </head>
+ <body>
+  <form action="./" id="form1" method="post" onsubmit="javascript:return WebForm_OnSubmit();">
+   <div class="aspNetHidden">
+    <input id="__EVENTTARGET" name="__EVENTTARGET" type="hidden" value=""/>
+    <input id="__EVENTARGUMENT" name="__EVENTARGUMENT" type="hidden" value=""/>
+    <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJLTg4NzQ1NTc1D2QWAgIDD2QWFgIDD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIPFh5mD2QWBGYPFQMCNjQQcGxhbmxpa2VzaW50aWxlch0gUGxhbmzEsSBFbGVrdHJpayBLZXNpbnRpbGVyaWQCAQ8WAh8AZmQCAQ9kFgRmDxUDAjEzG2JpbGdpL1/DlmRlbWVfTm9rdGFsYXLEsS8xMxIgw5ZkZW1lIE5va3RhbGFyxLFkAgEPFgIfAGZkAgIPZBYEZg8VAwIyOCpiaWxnaS9fT3RvbWF0xLBrX1NheWHDp19Pa3VtYV9TxLBzdGVtxLAvMjgeIE90b21hdGlrIFNheWHDpyBPa3VtYSBTaXN0ZW1pZAIBDxYCHwBmZAIDD2QWBGYPFQMCNDkkYmlsZ2kvX090b21hdMSwa19TYXlhw6dfU29yZ3VsYW1hLzQ5GiBPdG9tYXRpayBTYXlhw6cgU29yZ3VsYW1hZAIBDxYCHwBmZAIED2QWBGYPFQMCMjkeYmlsZ2kvX1Rha3PEsHRfxLDFn2xlbWxlcsSwLzI5EyBUYWtzaXQgxLDFn2xlbWxlcmlkAgEPFgIfAGZkAgUPZBYEZg8VAwIzMCBiaWxnaS9fRmF0dXJhX0HDp8Sxa2xhbWFsYXLEsS8zMBcgRmF0dXJhIEHDp8Sxa2xhbWFsYXLEsWQCAQ8WAh8AZmQCBg9kFgRmDxUDAjQ1F3NlcmJlc3RUdWtldGljaWxlci5hc3B4FSBTZXJiZXN0IFTDvGtldGljaWxlcmQCAQ8WAh8AZmQCBw9kFgRmDxUDAjMxCXRhcmlmZWxlcgogVGFyaWZlbGVyZAIBDxYCHwBmZAIID2QWBGYPFQMCNjcoYmlsZ2kvX0jEsHptZXRfS2FsxLB0ZV9Hw7ZzdGVyZ2VsZXLEsC82NxwgSGl6bWV0IEthbGl0ZSBHw7ZzdGVyZ2VsZXJpZAIBDxYCHwBmZAIJD2QWBGYPFQMCNjgmYmlsZ2kvX0LEsGxnxLBfVG9wbHVtdV9IxLB6bWV0bGVyxLAvNjgZIEJpbGdpIFRvcGx1bXUgSGl6bWV0bGVyaWQCAQ8WAh8AZmQCCg9kFgRmDxUDAjcwG2JpbGdpL19BYm9uZV9OdW1hcmFsYXLEsS83MBIgQWJvbmUgTnVtYXJhbGFyxLFkAgEPFgIfAGZkAgsPZBYEZg8VAwI3Mi5iaWxnaS9fQsSwbGfEsF9Hw7x2ZW5sxLDEn8SwX1BvbMSwdMSwa2FtxLF6LzcyHyBCaWxnaSBHw7x2ZW5sacSfaSBQb2xpdGlrYW3EsXpkAgEPFgIfAGZkAgwPZBYEZg8VAwI3MxlsaXNhbnNzaXotZWxla3RyaWstdXJldGltHSBMaXNhbnNzxLF6IEVsZWt0cmlrIMOccmV0aW1pZAIBDxYCHwBmZAIND2QWBGYPFQMCNzQNdGljYXJpLWthbGl0ZR8gVGljYXJpIEthbGl0ZSBEZcSfZXJsZW5kaXJtZXNpZAIBDxYCHwBmZAIOD2QWBGYPFQMCODEQZ2VuZWwtYXlkaW5sYXRtYRFHZW5lbCBBeWTEsW5sYXRtYWQCAQ8WAh8AZmQCBA9kFgICAQ8WAh8AAgMWBmYPZBYEZg8VAwIzOBMvYWJvbmVsaWtfaXNsZW1sZXJpFSBBYm9uZWxpayDEsMWfbGVtbGVyaWQCAQ8WAh8AZmQCAQ9kFgRmDxUDAjI2NWh0dHBzOi8vb25saW5lLmRlZGFzLmNvbS50ci9GYXR1cmEvTWlzYWZpckZhdHVyYVNvcmd1GiBCb3LDpyBTb3JndWxhbWEgdmUgw5ZkZW1lZAIBDxYCHwBmZAICD2QWBGYPFQMCMjcXL2thY2Fra3VsbGFuaW1iaWxkaXJpbWkbIEthw6dhayBLdWxsYW7EsW0gQmlsZGlyaW1pZAIBDxYCHwBmZAIFD2QWAgIBDxYCHwACCRYSZg9kFgRmDxUDAjEwFS9tdXN0ZXJpL19CYcWfdnVydS8xMAkgQmHFn3Z1cnVkAgEPFgIfAAIGFgwCAQ9kFgJmDxUCGW11c3RlcmkvX1PDtnpsZcWfbWVsZXIvMjEOIFPDtnpsZcWfbWVsZXJkAgIPZBYCZg8VAg15b25ldG1lbGlrbGVyDyBZw7ZuZXRtZWxpa2xlcmQCAw9kFgJmDxUCE2Zvcm1sYXJ2ZWRpbGVrY2VsZXIXIEZvcm1sYXIgVmUgRGlsZWvDp2VsZXJkAgQPZBYCZg8VAhRzb2tha2F5ZGlubGF0bWF0YWxlcB1Tb2thayBBeWTEsW5sYXRtYSBUYWxlcCBGb3JtdWQCBQ9kFgJmDxUCE211c3RlcmkvX1RhaGxpeWUvMjUIIFRhaGxpeWVkAgYPZBYCZg8VAiptdXN0ZXJpL19BYm9uZWxpxJ9pbl9Tb25sYW5kxLFyxLFsbWFzxLEvMTcfIEFib25lbGnEn2luIFNvbmxhbmTEsXLEsWxtYXPEsWQCAQ9kFgRmDxUDAjExES9oaXptZXRfbm9rdGFsYXJpEiBIaXptZXQgTm9rdGFsYXLEsWQCAQ8WAh8AZmQCAg9kFgRmDxUDAjEyDy9hcml6YWJpbGRpcmltaREgQXLEsXphIEJpbGRpcmltaWQCAQ8WAh8AZmQCAw9kFgRmDxUDAjE4FC9zb2tha2FyaXphYmlsZGlyaW1pIyBTb2thayBBeWTEsW5sYXRtYSBBcsSxemEgQmlsZGlyaW1pZAIBDxYCHwBmZAIED2QWBGYPFQMEMTA4NTFodHRwczovL29ubGluZS5kZWRhcy5jb20udHIvQWJvbmUvQWJvbmVPbmVyaUlzdGVrGSDEsHN0ZWstw5ZuZXJpLVRlxZ9la2vDvHJkAgEPFgIfAGZkAgUPZBYEZg8VAwIxOS5odHRwczovL29ubGluZS5kZWRhcy5jb20udHIvQWJvbmUvQWJvbmVTaWtheWV0CSDFnmlrYXlldGQCAQ8WAh8AZmQCBg9kFgRmDxUDAjIwBC9zc3MYIFPEsWvDp2EgU29ydWxhbiBTb3J1bGFyZAIBDxYCHwBmZAIHD2QWBGYPFQMCNzkgL2hha1NhaGliaVR1a2V0aWNpU29yZ3VsYW1hLmFzcHgRIEFsYWNhayBTb3JndWxhbWFkAgEPFgIfAGZkAggPZBYEZg8VAwI4MBUvdGF6bWluYXRvZGVtZXNpLmFzcHgmVGF6bWluYXQgU29yZ3VsYW1hIHZlIEJhxZ92dXJ1IEVrcmFuxLFkAgEPFgIfAGZkAgYPZBYCAgEPFgIfAAIFFgpmD2QWBGYPFQMCNTIQa2FtcGFueWFsYXIuYXNweAwgS2FtcGFueWFsYXJkAgEPFgIfAGZkAgEPZBYEZg8VAwI1NBF0dW1kdXl1cnVsYXIuYXNweA8gVMO8bSBEdXl1cnVsYXJkAgEPFgIfAGZkAgIPZBYEZg8VAwIzMwhoYWJlcmxlcg4gQmFzxLFuIE9kYXPEsWQCAQ8WAh8AZmQCAw9kFgRmDxUDAjg0MmR1eXVydS9fWWFzYWxfQmlsZGlyaW1sZXJfVmVfRGnEn2VyX0dlbGnFn21lbGVyLzg0KCBZYXNhbCBCaWxkaXJpbWxlciBWZSBEacSfZXIgR2VsacWfbWVsZXJkAgEPFgIfAGZkAgQPZBYEZg8VAwI3OA5zYXRpbkFsbWEuYXNweAogxLBoYWxlbGVyZAIBDxYCHwBmZAIHDxYCHwACAxYGZg9kFgJmDxUCABsyOTQ3MzZkaWNsZSB3ZWIgc2xpZGVyMi5qcGdkAgEPZBYCZg8VAgAaMjk0NzI2ZGljbGUgd2ViIHNsaWRlci5qcGdkAgIPZBYCZg8VAgAbMjk0ODQ0ZGljbGUgd2ViIHNsaWRlcjMuanBnZAIIDxYCHgRUZXh0BZIcPGRpdiBjbGFzcz0iaWNlcmlrc09ydGFJdGVtIj48ZGl2IGNsYXNzPSJpY2VyaWtvcnRhYmFzbGlrIiBzdHlsZT0ibWF4LXdpZHRoOiAzODBweCI+VGljYXJpIEthbGl0ZXllIMSwbGnFn2tpbiBHZXLDp2VrbGXFn21lbGVyIChNQVlJUy0yMDIxKTwvZGl2PjxkaXYgY2xhc3M9ImljZXJpa09ydGFPemV0Ij4gVGljYXJpIEthbGl0ZXllIMSwbGnFn2tpbiBHZXLDp2VrbGXFn21lbGVyIChtYXnEsXMtMjAyMSk8L2Rpdj48ZGl2IGNsYXNzPSJpX29fdGFyaWgiPjMwLjYuMjAyMTwvZGl2PjxhIGhyZWY9ImR1eXVydWRldGF5LmFzcHg/ZHV5dXJ1SUQ9NDI1Ij48ZGl2IGNsYXNzPSJpbmRleF9kZXZhbWkiPkRFVkFNSTwvZGl2PjwvYT48L2Rpdj48ZGl2IGNsYXNzPSJpY2VyaWtzT3J0YUl0ZW0iPjxkaXYgY2xhc3M9ImljZXJpa29ydGFiYXNsaWsiIHN0eWxlPSJtYXgtd2lkdGg6IDM4MHB4Ij5UZXNpcyBZYXDEsW0gU8O2emxlxZ9tZXNpIMSwbXphbGFtYXPEsSBHZXJla2VuIEt1bGxhbsSxY8SxbGFyPC9kaXY+PGRpdiBjbGFzcz0iaWNlcmlrT3J0YU96ZXQiPiBUZXNpcyBZYXDEsW0gU8O2emxlxZ9tZXNpIMSwbXphbGFtYXPEsSBHZXJla2VuIEt1bGxhbsSxY8SxbGFyPC9kaXY+PGRpdiBjbGFzcz0iaV9vX3RhcmloIj4xLjIuMjAyMTwvZGl2PjxhIGhyZWY9ImR1eXVydWRldGF5LmFzcHg/ZHV5dXJ1SUQ9NDI0Ij48ZGl2IGNsYXNzPSJpbmRleF9kZXZhbWkiPkRFVkFNSTwvZGl2PjwvYT48L2Rpdj48ZGl2IGNsYXNzPSJpY2VyaWtzT3J0YUl0ZW0iPjxkaXYgY2xhc3M9ImljZXJpa29ydGFiYXNsaWsiIHN0eWxlPSJtYXgtd2lkdGg6IDM4MHB4Ij5UaWNhcmkgS2FsaXRleWUgxLBsacWfa2luIEdlcsOnZWtsZcWfbWVsZXIgKE7EsFNBTiAyMDIxKTwvZGl2PjxkaXYgY2xhc3M9ImljZXJpa09ydGFPemV0Ij4gVGljYXJpIEthbGl0ZXllIMSwbGnFn2tpbiBHZXLDp2VrbGXFn21lbGVyIChuaXNhbiAyMDIxKTwvZGl2PjxkaXYgY2xhc3M9Imlfb190YXJpaCI+MzEuNS4yMDIxPC9kaXY+PGEgaHJlZj0iZHV5dXJ1ZGV0YXkuYXNweD9kdXl1cnVJRD00MjMiPjxkaXYgY2xhc3M9ImluZGV4X2RldmFtaSI+REVWQU1JPC9kaXY+PC9hPjwvZGl2PjxkaXYgY2xhc3M9ImljZXJpa3NPcnRhSXRlbSI+PGRpdiBjbGFzcz0iaWNlcmlrb3J0YWJhc2xpayIgc3R5bGU9Im1heC13aWR0aDogMzgwcHgiPlRpY2FyaSBLYWxpdGV5ZSDEsGxpxZ9raW4gR2Vyw6dla2xlxZ9tZWxlciAoTUFSVCAyMDIxKTwvZGl2PjxkaXYgY2xhc3M9ImljZXJpa09ydGFPemV0Ij4gVGljYXJpIEthbGl0ZXllIMSwbGnFn2tpbiBHZXLDp2VrbGXFn21lbGVyIChtYXJ0IDIwMjEpPC9kaXY+PGRpdiBjbGFzcz0iaV9vX3RhcmloIj4zMC40LjIwMjE8L2Rpdj48YSBocmVmPSJkdXl1cnVkZXRheS5hc3B4P2R1eXVydUlEPTQyMiI+PGRpdiBjbGFzcz0iaW5kZXhfZGV2YW1pIj5ERVZBTUk8L2Rpdj48L2E+PC9kaXY+PGRpdiBjbGFzcz0iaWNlcmlrc09ydGFJdGVtIj48ZGl2IGNsYXNzPSJpY2VyaWtvcnRhYmFzbGlrIiBzdHlsZT0ibWF4LXdpZHRoOiAzODBweCI+VGljYXJpIEthbGl0ZXllIMSwbGnFn2tpbiBHZXLDp2VrbGXFn21lbGVyICjFnlVCQVQgMjAyMSk8L2Rpdj48ZGl2IGNsYXNzPSJpY2VyaWtPcnRhT3pldCI+IFRpY2FyaSBLYWxpdGV5ZSDEsGxpxZ9raW4gR2Vyw6dla2xlxZ9tZWxlciAoxZ91YmF0IDIwMjEpPC9kaXY+PGRpdiBjbGFzcz0iaV9vX3RhcmloIj4zMS4zLjIwMjE8L2Rpdj48YSBocmVmPSJkdXl1cnVkZXRheS5hc3B4P2R1eXVydUlEPTQyMSI+PGRpdiBjbGFzcz0iaW5kZXhfZGV2YW1pIj5ERVZBTUk8L2Rpdj48L2E+PC9kaXY+PGRpdiBjbGFzcz0iaWNlcmlrc09ydGFJdGVtIj48ZGl2IGNsYXNzPSJpY2VyaWtvcnRhYmFzbGlrIiBzdHlsZT0ibWF4LXdpZHRoOiAzODBweCI+VGljYXJpIEthbGl0ZXllIMSwbGnFn2tpbiBHZXLDp2VrbGXFn21lbGVyIChPQ0FLIDIwMjEpPC9kaXY+PGRpdiBjbGFzcz0iaWNlcmlrT3J0YU96ZXQiPiBUaWNhcmkgS2FsaXRleWUgxLBsacWfa2luIEdlcsOnZWtsZcWfbWVsZXIgKG9jYWsgMjAyMSk8L2Rpdj48ZGl2IGNsYXNzPSJpX29fdGFyaWgiPjI4LjIuMjAyMTwvZGl2PjxhIGhyZWY9ImR1eXVydWRldGF5LmFzcHg/ZHV5dXJ1SUQ9NDIwIj48ZGl2IGNsYXNzPSJpbmRleF9kZXZhbWkiPkRFVkFNSTwvZGl2PjwvYT48L2Rpdj48ZGl2IGNsYXNzPSJpY2VyaWtzT3J0YUl0ZW0iPjxkaXYgY2xhc3M9ImljZXJpa29ydGFiYXNsaWsiIHN0eWxlPSJtYXgtd2lkdGg6IDM4MHB4Ij4yMDIwIFRha3ZpbSBZxLFsxLFuYSBhaXQgVMO8a2V0aW0gQmlsZ2lsZXJpPC9kaXY+PGRpdiBjbGFzcz0iaWNlcmlrT3J0YU96ZXQiPiAyMDIwIFRha3ZpbSBZxLFsxLFuYSBBaXQgVMO8a2V0aW0gQmlsZ2lsZXJpPC9kaXY+PGRpdiBjbGFzcz0iaV9vX3RhcmloIj4yNi4yLjIwMjE8L2Rpdj48YSBocmVmPSJkdXl1cnVkZXRheS5hc3B4P2R1eXVydUlEPTQxOSI+PGRpdiBjbGFzcz0iaW5kZXhfZGV2YW1pIj5ERVZBTUk8L2Rpdj48L2E+PC9kaXY+PGRpdiBjbGFzcz0iaWNlcmlrc09ydGFJdGVtIj48ZGl2IGNsYXNzPSJpY2VyaWtvcnRhYmFzbGlrIiBzdHlsZT0ibWF4LXdpZHRoOiAzODBweCI+VGljYXJpIEthbGl0ZXllIMSwbGnFn2tpbiBHZXLDp2VrbGXFn21lbGVyIChBUkFMSUsgMjAyMCk8L2Rpdj48ZGl2IGNsYXNzPSJpY2VyaWtPcnRhT3pldCI+IFRpY2FyaSBLYWxpdGV5ZSDEsGxpxZ9raW4gR2Vyw6dla2xlxZ9tZWxlciAoYXJhbMSxayAyMDIwKTwvZGl2PjxkaXYgY2xhc3M9Imlfb190YXJpaCI+MjAuMS4yMDIxPC9kaXY+PGEgaHJlZj0iZHV5dXJ1ZGV0YXkuYXNweD9kdXl1cnVJRD00MTciPjxkaXYgY2xhc3M9ImluZGV4X2RldmFtaSI+REVWQU1JPC9kaXY+PC9hPjwvZGl2PjxkaXYgY2xhc3M9ImljZXJpa3NPcnRhSXRlbSI+PGRpdiBjbGFzcz0iaWNlcmlrb3J0YWJhc2xpayIgc3R5bGU9Im1heC13aWR0aDogMzgwcHgiPlRpY2FyaSBLYWxpdGV5ZSDEsGxpxZ9raW4gR2Vyw6dla2xlxZ9tZWxlciAoS0FTSU0gMjAyMCk8L2Rpdj48ZGl2IGNsYXNzPSJpY2VyaWtPcnRhT3pldCI+IFRpY2FyaSBLYWxpdGV5ZSDEsGxpxZ9raW4gR2Vyw6dla2xlxZ9tZWxlciAoa2FzxLFtIDIwMjApPC9kaXY+PGRpdiBjbGFzcz0iaV9vX3RhcmloIj4yMS4xMi4yMDIwPC9kaXY+PGEgaHJlZj0iZHV5dXJ1ZGV0YXkuYXNweD9kdXl1cnVJRD00MTQiPjxkaXYgY2xhc3M9ImluZGV4X2RldmFtaSI+REVWQU1JPC9kaXY+PC9hPjwvZGl2PjxkaXYgY2xhc3M9ImljZXJpa3NPcnRhSXRlbSI+PGRpdiBjbGFzcz0iaWNlcmlrb3J0YWJhc2xpayIgc3R5bGU9Im1heC13aWR0aDogMzgwcHgiPlRpY2FyaSBLYWxpdGV5ZSDEsGxpxZ9raW4gR2Vyw6dla2xlxZ9tZWxlciAoRUvEsE0gMjAyMCk8L2Rpdj48ZGl2IGNsYXNzPSJpY2VyaWtPcnRhT3pldCI+IFRpY2FyaSBLYWxpdGV5ZSDEsGxpxZ9raW4gR2Vyw6dla2xlxZ9tZWxlciAoZWtpbSAyMDIwKTwvZGl2PjxkaXYgY2xhc3M9Imlfb190YXJpaCI+MjAuMTEuMjAyMDwvZGl2PjxhIGhyZWY9ImR1eXVydWRldGF5LmFzcHg/ZHV5dXJ1SUQ9NDEyIj48ZGl2IGNsYXNzPSJpbmRleF9kZXZhbWkiPkRFVkFNSTwvZGl2PjwvYT48L2Rpdj5kAgkPFgIfAQW6BTxsaSBjbGFzcz0iZGVuZW1lIj48YSBocmVmPSIuLi8uLi9rdXJ1bXNhbC9fSGFra8SxbcSxemRhLzkiPjxpbWcgY2xhc3M9Im5va3RhSW1hZ2VzIiBzcmM9Ii4uLy4uL3N0eWxlL2ltYWdlcy9ub2t0YS5wbmciIC8+PHNwYW4gY2xhc3M9IlRlc3QiPiBIYWtrxLFtxLF6ZGE8L3NwYW4+PC9hPjwvbGk+PGxpIGNsYXNzPSJkZW5lbWUiPjxhIGhyZWY9Ii4uLy4uL2lsbXVkdXJsdWtsZXJpIj48aW1nIGNsYXNzPSJub2t0YUltYWdlcyIgc3JjPSIuLi8uLi9zdHlsZS9pbWFnZXMvbm9rdGEucG5nIiAvPjxzcGFuIGNsYXNzPSJUZXN0Ij4gxLBsIE3DvGTDvHJsw7xrbGVyaTwvc3Bhbj48L2E+PC9saT48bGkgY2xhc3M9ImRlbmVtZSI+PGEgaHJlZj0iLi4vLi4vcG9saXRpa2FsYXJpbWl6Ij48aW1nIGNsYXNzPSJub2t0YUltYWdlcyIgc3JjPSIuLi8uLi9zdHlsZS9pbWFnZXMvbm9rdGEucG5nIiAvPjxzcGFuIGNsYXNzPSJUZXN0Ij4gUG9saXRpa2FsYXLEsW3EsXo8L3NwYW4+PC9hPjwvbGk+PGxpIGNsYXNzPSJkZW5lbWUiPjxhIGhyZWY9Ii4uLy4uL2tpc2lzZWwtdmVyaWxlcmluLWtvcnVubWFzaS5hc3B4Ij48aW1nIGNsYXNzPSJub2t0YUltYWdlcyIgc3JjPSIuLi8uLi9zdHlsZS9pbWFnZXMvbm9rdGEucG5nIiAvPjxzcGFuIGNsYXNzPSJUZXN0Ij4gS2nFn2lzZWwgVmVyaWxlcmluIEtvcnVubWFzxLE8L3NwYW4+PC9hPjwvbGk+ZAIKDxYCHwEFmwQ8bGkgY2xhc3M9ImRlbmVtZSI+PGEgaHJlZj0iL2FjaWtwb3ppc3lvbmxhci5hc3B4Ij48aW1nIGNsYXNzPSJub2t0YUltYWdlcyIgc3JjPSIuLi8uLi9zdHlsZS9pbWFnZXMvbm9rdGEucG5nIiAvPjxzcGFuIGNsYXNzPSJUZXN0Ij4gQcOnxLFrIFBvemlzeW9ubGFyPC9zcGFuPjwvYT48L2xpPjxsaSBjbGFzcz0iZGVuZW1lIj48YSBocmVmPSIva2FyaXllci9fTmnDp2luX0RpY2xlX0VsZWt0cmlrLzM3Ij48aW1nIGNsYXNzPSJub2t0YUltYWdlcyIgc3JjPSIuLi8uLi9zdHlsZS9pbWFnZXMvbm9rdGEucG5nIiAvPjxzcGFuIGNsYXNzPSJUZXN0Ij4gTmnDp2luIERpY2xlIEVsZWt0cmlrPC9zcGFuPjwvYT48L2xpPjxsaSBjbGFzcz0iZGVuZW1lIj48YSBocmVmPSIva2FyaXllci9fRGljbGVfRWxla3RyaWtfSGFra8SxbmRhLzM2Ij48aW1nIGNsYXNzPSJub2t0YUltYWdlcyIgc3JjPSIuLi8uLi9zdHlsZS9pbWFnZXMvbm9rdGEucG5nIiAvPjxzcGFuIGNsYXNzPSJUZXN0Ij4gRGljbGUgRWxla3RyaWsgSGFra8SxbmRhPC9zcGFuPjwvYT48L2xpPmQCCw8WAh4HVmlzaWJsZWhkAgwPFgIfAmhkAg0PFgIfAmhkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQhhcmFtYWJ0bqZaxKbHVsT6cyW+6izvCSBYpeJL31tmC1WiKCjc1kga"/>
+   </div>
+   <script type="text/javascript">
+    //<![CDATA[
+
+var theForm = document.forms['form1'];
+
+if (!theForm) {
+
+    theForm = document.form1;
+
+}
+
+function __doPostBack(eventTarget, eventArgument) {
+
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+
+        theForm.__EVENTTARGET.value = eventTarget;
+
+        theForm.__EVENTARGUMENT.value = eventArgument;
+
+        theForm.submit();
+
+    }
+
+}
+
+//]]>
+   </script>
+   <script src="/WebResource.axd?d=WqATNq3-QUVvOTn7sM--PSaitPJYLmyVac2tp5MqBMO-iOXdXKT6oOoeh41tcrAXvt7Imm7L0OqBjF9Ri7h9Z2traVV_FwoneZ5Ec12odlQ1&amp;t=636676198821668032" type="text/javascript">
+   </script>
+   <script type="text/javascript">
+    //<![CDATA[
+
+function WebForm_OnSubmit() {
+
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+
+return true;
+
+}
+
+//]]>
+   </script>
+   <div class="aspNetHidden">
+    <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="CA0B0334"/>
+   </div>
+   <div class="homePopupContainer">
+    <div class="hpcBG" onclick="ppKapat()">
+    </div>
+    <div class="hpcBox">
+     <div class="hpcbClose" onclick="ppKapat()">
+     </div>
+     <div class="hpcbImageBox">
+      <img src="content/fotosimage/22926Dicle_Evde Kal.jpg"/>
+     </div>
+    </div>
+   </div>
+   <script type="text/javascript">
+    function ppGoster() {
+
+                var winWidth = $(window).width(),
+
+                    winHeight = $(window).height(),
+
+                    imgHeight, imgWidth;
+
+                $(".hpcBG").fadeIn();
+
+                $(".hpcBox").fadeIn();
+
+                var hpcBox = $(".hpcBox");
+
+                var img = $(".hpcbImageBox img");
+
+                imgHeight = img.height();
+
+                imgWidth = img.width();
+
+                console.log(imgHeight + " " + winHeight);
+
+                if (imgHeight < winHeight - 50) {
+
+                    hpcBox.css("height", imgHeight);
+
+                    hpcBox.css("width", imgWidth);
+
+                    hpcBox.css({
+
+                        "background-color": "transparent",
+
+                    });
+
+
+
+                    $('.hpcbClose').css({
+
+                        marginTop: "-17px",
+
+                        position: "absolute",
+
+                        marginLeft: "1050px"
+
+                    });
+
+
+
+                }
+
+                else {
+
+                    hpcBox.css("height", winHeight - 100);
+
+                    hpcBox.css("width", (winHeight - 100) / imgHeight * imgWidth);
+
+                }
+
+                setTimeout(function () { ppKapat() }, '500000');
+
+            }
+
+            function ppKapat() {
+
+                $(".hpcBG").fadeOut();
+
+                $(".hpcBox").fadeOut();
+
+            }
+   </script>
+   <div class="ustcizgitum">
+   </div>
+   <div class="arkaorta">
+    <div class="master">
+     <div class="diclelogo">
+      <h3 style="color: #064154; font-size: 22px; font-weight: bold; margin-left: -15px">
+       <span style="background: url('/resimler/Alo186.png') no-repeat scroll center center rgba(0, 0, 0, 0); display: inline-block; height: 40px; margin-right: 10px; vertical-align: middle; width: 124px; margin-top: 10px;">
+       </span>
+      </h3>
+      <a href="/sa">
+       <img src="/resimler/diclelogo.png" style="margin-top:10px;"/>
+      </a>
+     </div>
+     <div style="padding-right: 33px; height: 108px; position: relative;">
+      <form action="#" id="formarama" method="post" name="Arama">
+       <div class="aramasubmit">
+        <input alt="arama" id="aramabtn" name="aramabtn" onclick="if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(''); " onmouseout="this.src='/resimler/ara1_1.gif'" onmouseover="this.src='/resimler/ara1_2.gif'" src="/resimler/ara1_1.gif" style="margin-top: 10px" type="image"/>
+       </div>
+       <div class="aramainput">
+        <input id="arama" name="arama" type="text"/>
+       </div>
+       <span id="RequiredFieldValidator1" style="display:none;">
+       </span>
+       <div class="karakteruyari">
+        Lütfen en az 3 karakterlik aranacak kelimeyi yazınız
+       </div>
+       <div class="divtemizle">
+       </div>
+       <div class="borcSorgulamaOdeme">
+        <a href="https://online.dedas.com.tr/Fatura/MisafirFaturaSorgu">
+         BORÇ SORGULAMA VE ÖDEME
+        </a>
+       </div>
+      </form>
+      <script type="text/javascript">
+       $(document).ready(function () {
+
+
+
+                            $('.icerikOrtaOzet').css({
+
+                                "text-transform": "capitalize"
+
+                            });
+
+                            $("#arama").bind('focusout', function () {
+
+                                $('.karakteruyari').hide();
+
+                            });
+
+
+
+                            $("#arama").keyup(function () {
+
+                                var uzunluk = $("#arama").val().length
+
+                                if (uzunluk > 2) {
+
+                                    $('.karakteruyari').hide();
+
+                                }
+
+                                else {
+
+                                    $('.karakteruyari').show();
+
+                                }
+
+                            });
+
+                            $("#formarama").submit(function () {
+
+                                var uzunluk = $("#arama").val()
+
+                                if ($("#arama").val() == '' || uzunluk.length < 3) {
+
+                                    $('.karakteruyari').show();
+
+                                    return false;
+
+                                }
+
+                                else {
+
+                                    return true;
+
+                                }
+
+                            });
+
+                            $('.acilan').hover(
+
+                                function () {
+
+                                    var posvidi = $(this).attr("aktif");
+
+                                    if (posvidi != 1) {
+
+                                        $(this).css("background-position", "0px -63px");
+
+                                        $('.acilancizgi').css('background-color', '#e1a313');
+
+                                    }
+
+                                    else {
+
+                                        $('.acilancizgi').css('background-color', '#d43135');
+
+                                    }
+
+                                    $(this).children('.acilanabsolute').stop(true, true).animate({ height: "show" }, { duration: 300, specialEasing: { height: 'easeOutExpo' } }).fadeIn();
+
+                                }, function () {
+
+                                    var posvidi = $(this).attr("aktif");
+
+                                    if (posvidi != 1) { $(this).css("background-position", "0px 0px"); }
+
+                                    $(this).children('.acilanabsolute').stop(true, true).fadeOut();
+
+                                });
+
+                            $('.acilan1').hover(
+
+                                function () {
+
+                                    $(this).children('a').children('img').attr("src", "/resimler/lsi2.png");
+
+                                    $(this).css('background-color', '#ec5b5e');
+
+                                    $(this).children('a').css('color', '#ffffff');
+
+                                    $(this).children('div').stop(true, true).animate({ height: "show" }, { duration: 300, specialEasing: { height: 'easeOutExpo' } }).fadeIn();							/*$(this).children('.acilanabsolute').stop(true,true).animate({height:"show"}, {duration:300,specialEasing: {height: 'easeOutExpo'}}).fadeIn();*/
+
+                                }, function () {
+
+                                    $(this).children('a').children('img').attr("src", "/resimler/lsi1.png");
+
+                                    $(this).css('background-color', 'transparent');
+
+                                    $(this).children('a').css('color', '#5f6268');
+
+                                    $(this).children('div').stop(true, true).fadeOut();
+
+                                });
+
+                        });
+      </script>
+     </div>
+     <div class="menu">
+      <ul>
+       <li class="acilan">
+        <a>
+         BİLGİ MERKEZİ
+        </a>
+        <div class="iconOkDown">
+        </div>
+        <div class="acilanabsolute">
+         <div class="acilancizgi">
+         </div>
+         <div class="acilandolu">
+          <ul>
+           <li class="acilan1 acil" rel="64">
+            <a href="/planlikesintiler ">
+             <img src="/resimler/lsi1.png"/>
+             Planlı Elektrik Kesintileri
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="13">
+            <a href="/bilgi/_Ödeme_Noktaları/13 ">
+             <img src="/resimler/lsi1.png"/>
+             Ödeme Noktaları
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="28">
+            <a href="/bilgi/_Otomatİk_Sayaç_Okuma_Sİstemİ/28 ">
+             <img src="/resimler/lsi1.png"/>
+             Otomatik Sayaç Okuma Sistemi
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="49">
+            <a href="/bilgi/_Otomatİk_Sayaç_Sorgulama/49 ">
+             <img src="/resimler/lsi1.png"/>
+             Otomatik Sayaç Sorgulama
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="29">
+            <a href="/bilgi/_Taksİt_İşlemlerİ/29 ">
+             <img src="/resimler/lsi1.png"/>
+             Taksit İşlemleri
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="30">
+            <a href="/bilgi/_Fatura_Açıklamaları/30 ">
+             <img src="/resimler/lsi1.png"/>
+             Fatura Açıklamaları
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="45">
+            <a href="/serbestTuketiciler.aspx ">
+             <img src="/resimler/lsi1.png"/>
+             Serbest Tüketiciler
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="31">
+            <a href="/tarifeler ">
+             <img src="/resimler/lsi1.png"/>
+             Tarifeler
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="67">
+            <a href="/bilgi/_Hİzmet_Kalİte_Göstergelerİ/67 ">
+             <img src="/resimler/lsi1.png"/>
+             Hizmet Kalite Göstergeleri
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="68">
+            <a href="/bilgi/_Bİlgİ_Toplumu_Hİzmetlerİ/68 ">
+             <img src="/resimler/lsi1.png"/>
+             Bilgi Toplumu Hizmetleri
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="70">
+            <a href="/bilgi/_Abone_Numaraları/70 ">
+             <img src="/resimler/lsi1.png"/>
+             Abone Numaraları
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="72">
+            <a href="/bilgi/_Bİlgİ_Güvenlİğİ_Polİtİkamız/72 ">
+             <img src="/resimler/lsi1.png"/>
+             Bilgi Güvenliği Politikamız
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="73">
+            <a href="/lisanssiz-elektrik-uretim ">
+             <img src="/resimler/lsi1.png"/>
+             Lisanssız Elektrik Üretimi
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="74">
+            <a href="/ticari-kalite ">
+             <img src="/resimler/lsi1.png"/>
+             Ticari Kalite Değerlendirmesi
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="81">
+            <a href="/genel-aydinlatma ">
+             <img src="/resimler/lsi1.png"/>
+             Genel Aydınlatma
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <script type="text/javascript">
+          $(document).ready(function () {
+
+            var C = $('.subHead').html();
+
+            //IProblems(C);
+
+            $('.acil').each(function () {
+
+                var length = $('.acilan1', this).length;
+
+                if (length == 0)
+
+                    $('.acilandolu', this).remove();
+
+                else
+
+                    $(this).find("a").eq(0).removeAttr("href");
+
+            });
+
+            $('.hizlisol1').not('.hizlisol1ActiveUl').hover(
+
+            function () {
+
+                $(this).css('background-color', '#cad1e6');
+
+                $(this).children('a').css('color', '#293247');
+
+                $(this).prev().css('background-color', 'transparent');
+
+                $(this).next().css('background-color', 'transparent');
+
+            }, function () {
+
+                $(this).css('background-color', 'transparent');
+
+                $(this).prev().css('background-color', '#8e95a4');
+
+                $(this).next().css('background-color', '#8e95a4');
+
+                $(this).children('a').css('color', '#ffffff');
+
+            });
+
+        });
+         </script>
+         <script type="text/javascript">
+          //function IProblems(k)
+
+        //{
+
+        //    var tcCharacterLittle = "abcçdefgğhıijklmnoöprsştuüvyzwqx";
+
+        //    var tcCharacterBig = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZWQX";
+
+
+
+        //    for (var i = 0; i < k.length; i++) {
+
+        //        var Karakter = k.substring(i,' ');
+
+        //        alert(Karakter);
+
+        //        if (tcCharacterLittle.contains(k[i]))
+
+        //        {
+
+                    
+
+        //            var index = tcCharacterLittle.indexOf(k);
+
+        //            var c = tcCharacterBig[index];
+
+        //            k = k.replace(k[i], c);
+
+        //        }
+
+        //        alert(k);
+
+        //        return k;
+
+        //    }
+
+        //}
+         </script>
+        </div>
+       </li>
+       <li class="acilan">
+        <a>
+         ABONE İŞLEMLERİ
+        </a>
+        <div class="iconOkDown">
+        </div>
+        <div class="acilanabsolute">
+         <div class="acilancizgi">
+         </div>
+         <div class="acilandolu">
+          <ul>
+           <li class="acilan1 acil" rel="38">
+            <a href="/abonelik_islemleri ">
+             <img src="/resimler/lsi1.png"/>
+             Abonelik İşlemleri
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="26">
+            <a href="https://online.dedas.com.tr/Fatura/MisafirFaturaSorgu ">
+             <img src="/resimler/lsi1.png"/>
+             Borç Sorgulama ve Ödeme
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="27">
+            <a href="/kacakkullanimbildirimi ">
+             <img src="/resimler/lsi1.png"/>
+             Kaçak Kullanım Bildirimi
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <script type="text/javascript">
+          $(document).ready(function () {
+
+            $('.acil').each(function () {
+
+                var length = $('.acilan1', this).length;
+
+
+
+                if (length == 0)
+
+                    $('.acilandolu', this).remove();
+
+                else
+
+                    $(this).find("a").eq(0).removeAttr("href");
+
+
+
+                var lnk = $(this).find("a").eq(0).attr("href");
+
+                if (typeof lnk != 'undefined') {
+
+                    if (lnk.substring(0, 5) === '//www')
+
+                        $(this).find("a").eq(0).attr("target", "_blank");
+
+                }
+
+
+
+            });
+
+            $('.hizlisol1').not('.hizlisol1ActiveUl').hover(
+
+            function () {
+
+                $(this).css('background-color', '#cad1e6');
+
+                $(this).children('a').css('color', '#293247');
+
+                $(this).prev().css('background-color', 'transparent');
+
+                $(this).next().css('background-color', 'transparent');
+
+                $(this).find('img').attr('src', '/resimler/lsi1.png');
+
+            }, function () {
+
+                $(this).css('background-color', 'transparent');
+
+                $(this).prev().css('background-color', '#8e95a4');
+
+                $(this).next().css('background-color', '#8e95a4');
+
+                $(this).children('a').css('color', '#ffffff');
+
+                $(this).find('img').attr('src', '/resimler/lsi2.png');
+
+            });
+
+            $('.hizlisol1').each(function () {
+
+                if ($(this).find('.hizlisol1Link').text().trim() == "Borç Sorgulama") {
+
+                    $(this).find('.hizlisol1Link').attr('target', '_blank')
+
+                }
+
+            })
+
+        });
+         </script>
+        </div>
+       </li>
+       <li class="acilan">
+        <a>
+         MÜŞTERİ HİZMETLERİ
+        </a>
+        <div class="iconOkDown">
+        </div>
+        <div class="acilanabsolute">
+         <div class="acilancizgi">
+         </div>
+         <div class="acilandolu">
+          <ul>
+           <li class="acilan1 acil" rel="10">
+            <a href="/musteri/_Başvuru/10 ">
+             <img src="/resimler/lsi1.png"/>
+             Başvuru
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+              <li class="acilan1">
+               <a href="/musteri/_Sözleşmeler/21">
+                <img src="/resimler/lsi1.png"/>
+                Sözleşmeler
+               </a>
+              </li>
+              <li class="acilan1">
+               <a href="/yonetmelikler">
+                <img src="/resimler/lsi1.png"/>
+                Yönetmelikler
+               </a>
+              </li>
+              <li class="acilan1">
+               <a href="/formlarvedilekceler">
+                <img src="/resimler/lsi1.png"/>
+                Formlar Ve Dilekçeler
+               </a>
+              </li>
+              <li class="acilan1">
+               <a href="/sokakaydinlatmatalep">
+                <img src="/resimler/lsi1.png"/>
+                Sokak Aydınlatma Talep Formu
+               </a>
+              </li>
+              <li class="acilan1">
+               <a href="/musteri/_Tahliye/25">
+                <img src="/resimler/lsi1.png"/>
+                Tahliye
+               </a>
+              </li>
+              <li class="acilan1">
+               <a href="/musteri/_Aboneliğin_Sonlandırılması/17">
+                <img src="/resimler/lsi1.png"/>
+                Aboneliğin Sonlandırılması
+               </a>
+              </li>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="11">
+            <a href="/hizmet_noktalari ">
+             <img src="/resimler/lsi1.png"/>
+             Hizmet Noktaları
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="12">
+            <a href="/arizabildirimi ">
+             <img src="/resimler/lsi1.png"/>
+             Arıza Bildirimi
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="18">
+            <a href="/sokakarizabildirimi ">
+             <img src="/resimler/lsi1.png"/>
+             Sokak Aydınlatma Arıza Bildirimi
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="1085">
+            <a href="https://online.dedas.com.tr/Abone/AboneOneriIstek ">
+             <img src="/resimler/lsi1.png"/>
+             İstek-Öneri-Teşekkür
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="19">
+            <a href="https://online.dedas.com.tr/Abone/AboneSikayet ">
+             <img src="/resimler/lsi1.png"/>
+             Şikayet
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="20">
+            <a href="/sss ">
+             <img src="/resimler/lsi1.png"/>
+             Sıkça Sorulan Sorular
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="79">
+            <a href="/hakSahibiTuketiciSorgulama.aspx ">
+             <img src="/resimler/lsi1.png"/>
+             Alacak Sorgulama
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="80">
+            <a href="/tazminatodemesi.aspx ">
+             <img src="/resimler/lsi1.png"/>
+             Tazminat Sorgulama ve Başvuru Ekranı
+            </a>
+            <div class="acilandolu acildis">
+             <ul>
+             </ul>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <script type="text/javascript">
+          $(document).ready(function () {
+
+                    $('.acil').each(function () {
+
+                        var length = $('.acilan1', this).length;
+
+                        if (length == 0)
+
+                            $('.acilandolu', this).remove();
+
+                        else
+
+                            $(this).find("a").eq(0).removeAttr("href");
+
+                    });
+
+                    $('.hizlisol1').not('.hizlisol1ActiveUl').hover(
+
+                    function () {
+
+                        $(this).css('background-color', '#cad1e6');
+
+                        $(this).children('a').css('color', '#293247');
+
+                        $(this).prev().css('background-color', 'transparent');
+
+                    }, function () {
+
+                        $(this).css('background-color', 'transparent');
+
+                        $(this).prev().css('background-color', '#8e95a4');
+
+                        $(this).children('a').css('color', '#ffffff');
+
+                    });
+
+                });
+         </script>
+        </div>
+       </li>
+       <li class="acilan">
+        <a>
+         DUYURULAR
+        </a>
+        <div class="iconOkDown">
+        </div>
+        <div class="acilanabsolute">
+         <div class="acilancizgi">
+         </div>
+         <div class="acilandolu">
+          <ul>
+           <li class="acilan1 acil" rel="52">
+            <a href="/kampanyalar.aspx ">
+             <img src="/resimler/lsi1.png"/>
+             Kampanyalar
+            </a>
+            <div class="acilandolu acildisLeft">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="54">
+            <a href="/tumduyurular.aspx ">
+             <img src="/resimler/lsi1.png"/>
+             Tüm Duyurular
+            </a>
+            <div class="acilandolu acildisLeft">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="33">
+            <a href="/haberler ">
+             <img src="/resimler/lsi1.png"/>
+             Basın Odası
+            </a>
+            <div class="acilandolu acildisLeft">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="84">
+            <a href="/duyuru/_Yasal_Bildirimler_Ve_Diğer_Gelişmeler/84 ">
+             <img src="/resimler/lsi1.png"/>
+             Yasal Bildirimler Ve Diğer Gelişmeler
+            </a>
+            <div class="acilandolu acildisLeft">
+             <ul>
+             </ul>
+            </div>
+           </li>
+           <li class="acilan1 acil" rel="78">
+            <a href="/satinAlma.aspx ">
+             <img src="/resimler/lsi1.png"/>
+             İhaleler
+            </a>
+            <div class="acilandolu acildisLeft">
+             <ul>
+             </ul>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <script type="text/javascript">
+          $(document).ready(function () {
+
+            $('.acil').each(function () {
+
+                var length = $('.acilan1', this).length;
+
+
+
+                if (length == 0)
+
+                    $('.acilandolu', this).remove();
+
+                else
+
+                    $(this).find("a").eq(0).removeAttr("href");
+
+
+
+                var lnk = $(this).find("a").eq(0).attr("href");
+
+                if (typeof lnk != 'undefined') {
+
+                    if (lnk.substring(0, 5) === '//www')
+
+                        $(this).find("a").eq(0).attr("target", "_blank");
+
+                }
+
+
+
+            });
+
+            $('.hizlisol1').not('.hizlisol1ActiveUl').hover(
+
+            function () {
+
+                $(this).css('background-color', '#cad1e6');
+
+                $(this).children('a').css('color', '#293247');
+
+                $(this).prev().css('background-color', 'transparent');
+
+                $(this).next().css('background-color', 'transparent');
+
+                $(this).find('img').attr('src', '/resimler/lsi1.png');
+
+            }, function () {
+
+                $(this).css('background-color', 'transparent');
+
+                $(this).prev().css('background-color', '#8e95a4');
+
+                $(this).next().css('background-color', '#8e95a4');
+
+                $(this).children('a').css('color', '#ffffff');
+
+                $(this).find('img').attr('src', '/resimler/lsi2.png');
+
+            });
+
+            $('.hizlisol1').each(function () {
+
+                if ($(this).find('.hizlisol1Link').text().trim() == "Borç Sorgulama") {
+
+                    $(this).find('.hizlisol1Link').attr('target', '_blank')
+
+                }
+
+            })
+
+        });
+         </script>
+        </div>
+       </li>
+       <li class="acilan">
+        <a href="/dicleAktuel.aspx">
+         DİCLE AKTÜEL
+        </a>
+       </li>
+      </ul>
+     </div>
+     <script src="/JS/JS_JQuery/jquery.effects.core.js" type="text/javascript">
+     </script>
+     <link href="/JS/skitter/css/skitter.styles.css" media="all" rel="stylesheet" type="text/css"/>
+     <script src="/JS/skitter/js/jquery.skitter.js" type="text/javascript">
+     </script>
+     <script type="text/javascript">
+      $(".acil").each(function () {
+
+                        if ($(this).find("li").length != 0) {
+
+                            $(this).addClass("acilanOklu");
+
+
+
+                        }
+
+                    });
+
+
+
+                    if ($(window).width() < 1200) {
+
+                        $('.acilandolu .acilandolu.acildis').each(function () {
+
+                            $(this).css("margin-left", "-280px");
+
+                        });
+
+                        $(".acilanabsolute.knt").css("right", "0px");
+
+                    }
+
+                    $(document).ready(function () {
+
+                        var ttoplam = 0;
+
+                        $('.box_skitter_medium').css({ width: 1024, height: 455 }).skitter({ animation: 'fade', show_randomly: false, dots: true, interval: 6000, easing_default: 'easeInOutQuad' });
+
+                        $(".image_number").each(function (index) {
+
+                            ttoplam = ttoplam + Number($(this).width()) + 4
+
+                        });
+
+                        ttoplam = ttoplam + 67
+
+                        $(".next_button").css('left', '' + ttoplam + 'px')
+
+                    });
+     </script>
+     <div class="border_box">
+      <div class="box_skitter box_skitter_medium">
+       <ul>
+        <li>
+         <a href="" style="width: 1024px; height: 455px;">
+          <img src="/content/slider/294736dicle web slider2.jpg"/>
+         </a>
+        </li>
+        <li>
+         <a href="" style="width: 1024px; height: 455px;">
+          <img src="/content/slider/294726dicle web slider.jpg"/>
+         </a>
+        </li>
+        <li>
+         <a href="" style="width: 1024px; height: 455px;">
+          <img src="/content/slider/294844dicle web slider3.jpg"/>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="icerik">
+      <div class="iceriksol">
+       <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+                                //});
+
+                                $('.hizlisol1').hover(
+
+                                    function () {
+
+                                        $(this).children('a').children('img').attr("src", "/resimler/lsi1.png");
+
+                                        $(this).css('background-color', '#cad1e6');
+
+                                        $(this).children('a').css('color', '#293247');
+
+                                        $(this).prev().css('background-color', 'transparent');
+
+                                        $(this).next().css('background-color', 'transparent');
+
+                                    }, function () {
+
+                                        $(this).children('a').children('img').attr("src", "/resimler/lsi2.png");
+
+                                        $(this).css('background-color', 'transparent');
+
+                                        $(this).prev().css('background-color', '#8e95a4');
+
+                                        $(this).next().css('background-color', '#8e95a4');
+
+                                        $(this).children('a').css('color', '#ffffff');
+
+                                    });
+
+                                if (localStorage.getItem("cookiesStatement") == null)
+
+                                    $(".veriAltBar").show();
+
+                                else
+
+                                    $(".veriAltBar").hide();
+
+                                $(".closeX").click(function () {
+
+                                    localStorage.setItem("cookiesStatement", "cookies");
+
+                                    $(".veriAltBar").hide();
+
+                                });
+
+                            });
+       </script>
+       <div class="hizlierisim">
+        HIZLI ERİŞİM
+       </div>
+       <div class="hizlisol">
+        <ul>
+         <li class="hizlisol1">
+          <a href="/abonelik_islemleri">
+           <img src="/resimler/lsi2.png"/>
+           ABONELİK İŞLEMLERİ
+          </a>
+         </li>
+         <li class="hizliorta">
+         </li>
+         <li class="hizlisol1">
+          <a href="/planlikesintiler">
+           <img src="/resimler/lsi2.png"/>
+           PLANLI ELEKTRİK KESİNTİSİ
+          </a>
+         </li>
+         <li class="hizliorta">
+         </li>
+         <li class="hizlisol1">
+          <a href="/hizmet_noktalari">
+           <img src="/resimler/lsi2.png"/>
+           HİZMET NOKTALARI
+          </a>
+         </li>
+         <li class="hizliorta">
+         </li>
+         <li class="hizlisol1">
+          <a href="/bilgi/Ödeme_Noktaları/13">
+           <img src="/resimler/lsi2.png"/>
+           ÖDEME NOKTALARI
+          </a>
+         </li>
+         <li class="hizliorta">
+         </li>
+         <li class="hizlisol1">
+          <a href="/arizabildirimi">
+           <img src="/resimler/lsi2.png"/>
+           ARIZA BİLDİRİMİ
+          </a>
+         </li>
+         <li class="hizliorta">
+         </li>
+         <li class="hizlisol1">
+          <a href="/lisanssiz-elektrik-uretim" style="font-size: 15px;">
+           <img src="/resimler/lsi2.png"/>
+           LİSANSSIZ ELEKTRİK ÜRETİMİ
+          </a>
+         </li>
+         <li class="hizliorta">
+         </li>
+         <li class="hizlisol1">
+          <a href="/kisisel-verilerin-korunmasi.aspx" style="font-size: 15px;">
+           <img src="/resimler/lsi2.png"/>
+           KİŞİSEL VERİLERİN KORUNMASI
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="iceriksorta">
+       <div class="iceriksOrtaBox" id="iceriksOrtaBox">
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (MAYIS-2021)
+         </div>
+         <div class="icerikOrtaOzet">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (mayıs-2021)
+         </div>
+         <div class="i_o_tarih">
+          30.6.2021
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=425">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Tesis Yapım Sözleşmesi İmzalaması Gereken Kullanıcılar
+         </div>
+         <div class="icerikOrtaOzet">
+          Tesis Yapım Sözleşmesi İmzalaması Gereken Kullanıcılar
+         </div>
+         <div class="i_o_tarih">
+          1.2.2021
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=424">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (NİSAN 2021)
+         </div>
+         <div class="icerikOrtaOzet">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (nisan 2021)
+         </div>
+         <div class="i_o_tarih">
+          31.5.2021
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=423">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (MART 2021)
+         </div>
+         <div class="icerikOrtaOzet">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (mart 2021)
+         </div>
+         <div class="i_o_tarih">
+          30.4.2021
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=422">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (ŞUBAT 2021)
+         </div>
+         <div class="icerikOrtaOzet">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (şubat 2021)
+         </div>
+         <div class="i_o_tarih">
+          31.3.2021
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=421">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (OCAK 2021)
+         </div>
+         <div class="icerikOrtaOzet">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (ocak 2021)
+         </div>
+         <div class="i_o_tarih">
+          28.2.2021
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=420">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          2020 Takvim Yılına ait Tüketim Bilgileri
+         </div>
+         <div class="icerikOrtaOzet">
+          2020 Takvim Yılına Ait Tüketim Bilgileri
+         </div>
+         <div class="i_o_tarih">
+          26.2.2021
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=419">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (ARALIK 2020)
+         </div>
+         <div class="icerikOrtaOzet">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (aralık 2020)
+         </div>
+         <div class="i_o_tarih">
+          20.1.2021
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=417">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (KASIM 2020)
+         </div>
+         <div class="icerikOrtaOzet">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (kasım 2020)
+         </div>
+         <div class="i_o_tarih">
+          21.12.2020
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=414">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+        <div class="iceriksOrtaItem">
+         <div class="icerikortabaslik" style="max-width: 380px">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (EKİM 2020)
+         </div>
+         <div class="icerikOrtaOzet">
+          Ticari Kaliteye İlişkin Gerçekleşmeler (ekim 2020)
+         </div>
+         <div class="i_o_tarih">
+          20.11.2020
+         </div>
+         <a href="duyurudetay.aspx?duyuruID=412">
+          <div class="index_devami">
+           DEVAMI
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="icerikTumDuyurular">
+        <a class="icerikTumDuyuruGora" href="tumduyurular.aspx">
+        </a>
+       </div>
+       <div>
+        <div class="index_numara">
+         <div class="holderBox">
+          <div class="holder">
+          </div>
+          <div class="clear">
+          </div>
+         </div>
+        </div>
+       </div>
+       <script src="/JS/jPages.js">
+       </script>
+       <script type="text/javascript">
+        $('.holder').jPages({
+
+                                containerID: "iceriksOrtaBox",
+
+                                perPage: 2,
+
+                                startPage: 1,
+
+                                startRange: 01,
+
+                                midRange: 10,
+
+                                endRange: 0
+
+                            });
+
+                            $('.iceriksOrtaItem').each(function () {
+
+                                var index = $(this).index('.iceriksOrtaItem');
+
+                                if (index % 2 == 1) {
+
+                                    $(this).css('border-color', 'transparent')
+
+                                }
+
+                            })
+
+                            $(document).ready(function () {
+
+                                /*var index = 0;
+
+                                var indexEx = 0;
+
+                                $('.iceriksOrtaItem').eq(index).show();
+
+                                $('.index_numara').find('li').click(function () {
+
+                                var index = $(this).index('.index_numara li');
+
+                                if (indexEx != index) {
+
+                                $('.iceriksOrtaItem').eq(indexEx).fadeOut(200, function () {
+
+                                $('.iceriksOrtaItem').eq(index).fadeIn(200);
+
+                                indexEx = index;
+
+                                });
+
+                                }
+
+                                });*/
+
+                            });
+       </script>
+      </div>
+      <div class="iceriksag">
+       <div style="padding-top: 3px;">
+        <a href="kacakkullanimbildirimi.aspx">
+         <img onmouseout="this.src='/resimler/kacak_kullanim_bildirimi.jpg'" onmouseover="this.src='/resimler/kacak_kullanim_bildirimi_2.jpg'" src="/resimler/kacak_kullanim_bildirimi.jpg"/>
+        </a>
+       </div>
+       <div style="padding-top: 3px;">
+        <a href="hizmet_noktalari">
+         <img onmouseout="this.src='/resimler/musteri_hizmetleri.jpg'" onmouseover="this.src='/resimler/musteri_hizmetleri_2.jpg'" src="/resimler/musteri_hizmetleri.jpg"/>
+        </a>
+       </div>
+       <div style="padding-top: 3px;">
+        <a href="https://online.dedas.com.tr/Abone/AboneOneriIstek">
+         <img onmouseout="this.src='/resimler/istek_öneri_tesekkür.jpg'" onmouseover="this.src='/resimler/istek_öneri_tesekkür_2.jpg'" src="/resimler/istek_öneri_tesekkür.jpg"/>
+        </a>
+       </div>
+       <div style="padding-top: 3px;">
+        <a href="https://online.dedas.com.tr/Abone/AboneSikayet">
+         <img onmouseout="this.src='/resimler/sikayet.jpg'" onmouseover="this.src='/resimler/sikayet_2.jpg'" src="/resimler/sikayet.jpg"/>
+        </a>
+       </div>
+       <div style="padding-top: 3px;">
+        <a href="https://online.dedas.com.tr/RandevuAl">
+         <img onmouseout="this.src='/resimler/online_randevu_al.jpg'" onmouseover="this.src='/resimler/online_randevu_al_2.jpg'" src="/resimler/online_randevu_al.jpg"/>
+        </a>
+       </div>
+      </div>
+      <div class="divtemizle">
+      </div>
+     </div>
+     <div class="indexalt">
+      <div class="indexalt1">
+       <div class="left">
+        <div class="kurumsal">
+         <p id="kurumsalH">
+          KURUMSAL
+         </p>
+         <ul id="kurumsalUL">
+          <li class="deneme">
+           <a href="../../kurumsal/_Hakkımızda/9">
+            <img class="noktaImages" src="../../style/images/nokta.png"/>
+            <span class="Test">
+             Hakkımızda
+            </span>
+           </a>
+          </li>
+          <li class="deneme">
+           <a href="../../ilmudurlukleri">
+            <img class="noktaImages" src="../../style/images/nokta.png"/>
+            <span class="Test">
+             İl Müdürlükleri
+            </span>
+           </a>
+          </li>
+          <li class="deneme">
+           <a href="../../politikalarimiz">
+            <img class="noktaImages" src="../../style/images/nokta.png"/>
+            <span class="Test">
+             Politikalarımız
+            </span>
+           </a>
+          </li>
+          <li class="deneme">
+           <a href="../../kisisel-verilerin-korunmasi.aspx">
+            <img class="noktaImages" src="../../style/images/nokta.png"/>
+            <span class="Test">
+             Kişisel Verilerin Korunması
+            </span>
+           </a>
+          </li>
+         </ul>
+         <div class="kurumsalYanCizgi">
+         </div>
+        </div>
+        <div class="kariyer">
+         <p id="kariyerH">
+          KARİYER
+         </p>
+         <ul id="kariyerUL">
+          <li class="deneme">
+           <a href="/acikpozisyonlar.aspx">
+            <img class="noktaImages" src="../../style/images/nokta.png"/>
+            <span class="Test">
+             Açık Pozisyonlar
+            </span>
+           </a>
+          </li>
+          <li class="deneme">
+           <a href="/kariyer/_Niçin_Dicle_Elektrik/37">
+            <img class="noktaImages" src="../../style/images/nokta.png"/>
+            <span class="Test">
+             Niçin Dicle Elektrik
+            </span>
+           </a>
+          </li>
+          <li class="deneme">
+           <a href="/kariyer/_Dicle_Elektrik_Hakkında/36">
+            <img class="noktaImages" src="../../style/images/nokta.png"/>
+            <span class="Test">
+             Dicle Elektrik Hakkında
+            </span>
+           </a>
+          </li>
+         </ul>
+         <div class="kurumsalYanCizgi">
+         </div>
+        </div>
+       </div>
+       <div class="right">
+        <p id="iletisimH">
+         <a href="/iletisim">
+          İLETİŞİM
+         </a>
+        </p>
+       </div>
+      </div>
+      <div class="indexalt2">
+       <img src="/resimler/simsek.png"/>
+      </div>
+      <div class="indexalt3">
+       <div class="indexalt3_1" style="padding: 35px 0px 0px 155px;">
+        <ul style="float: right; margin-right: 13px">
+        </ul>
+       </div>
+       <div class="divtemizle">
+       </div>
+       <div class="indexalt3_2">
+        Copyright © DİCLE ELEKTRİK DAĞITIM A.Ş.
+       </div>
+       <div class="indexalt3_3">
+        Her hakkı saklıdır.
+       </div>
+       <div class="veriAltBar">
+        <div class="txt">
+         <span class="tr">
+          <a href="/kisisel-verilerin-korunmasi.aspx" target="_blank">
+           6698 sayılı Kişisel Verilerin Korunması Kanunu uyarınca hazırlanmış aydınlatma metnimizi okumak için tıklayınız
+          </a>
+         </span>
+         <span class="closeX" style="cursor: pointer; margin-left: 20px; font-weight: bold; font-size: 22px;">
+          x
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="divtemizle">
+      </div>
+     </div>
+    </div>
+   </div>
+   <script type="text/javascript">
+    //<![CDATA[
+
+var Page_Validators =  new Array(document.getElementById("RequiredFieldValidator1"));
+
+//]]>
+   </script>
+   <script type="text/javascript">
+    //<![CDATA[
+
+var RequiredFieldValidator1 = document.all ? document.all["RequiredFieldValidator1"] : document.getElementById("RequiredFieldValidator1");
+
+RequiredFieldValidator1.controltovalidate = "arama";
+
+RequiredFieldValidator1.errormessage = "Lütfen en az 3 karakterlik aranacak kelimeyi yazınız";
+
+RequiredFieldValidator1.display = "None";
+
+RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+
+RequiredFieldValidator1.initialvalue = "";
+
+//]]>
+   </script>
+   <script type="text/javascript">
+    //<![CDATA[
+
+
+
+var Page_ValidationActive = false;
+
+if (typeof(ValidatorOnLoad) == "function") {
+
+    ValidatorOnLoad();
+
+}
+
+
+
+function ValidatorOnSubmit() {
+
+    if (Page_ValidationActive) {
+
+        return ValidatorCommonOnSubmit();
+
+    }
+
+    else {
+
+        return true;
+
+    }
+
+}
+
+        //]]>
+   </script>
+  </form>
+ </body>
+</html>

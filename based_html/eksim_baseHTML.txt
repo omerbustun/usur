@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html id="html" lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+ <head id="PageHead">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700|Open+Sans+Condensed:300|Raleway:300,400,700|Roboto+Condensed:300,400|Roboto:400,700,900&amp;subset=latin-ext" rel="stylesheet"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript">
+  </script>
+  <link href="/css/fa/font-awesome.css" rel="stylesheet"/>
+  <link href="/css/normalize.css" rel="stylesheet"/>
+  <link href="/css/sitelayout.css?v=1.2" rel="stylesheet"/>
+  <link href="/css/animate.css" rel="stylesheet"/>
+  <script src="/js/wow.min.js">
+  </script>
+  <script>
+   new WOW().init();
+  </script>
+  <script>
+   $(function () {
+            $(".gizle").click(function () {
+                var durum = $(this).attr("data-durum");
+                if (durum == "off") {
+                    var gen = $(window).width();
+                    if (gen > 1024) {
+                        $('.aramaKutusu').focus();
+                    } else {
+                        $(".toBlur").each(function () {
+                            $(this).addClass("blur");
+                        });
+                        $(".menuBarCont").fadeIn("fast");
+                        $(this).attr("data-durum", "on");
+                        $('.back-button').removeClass("dNone");
+                    }
+                }
+                else {
+                    $(".blur").removeClass("blur");
+                    $(".menuBarCont").fadeOut("fast");
+                    $(this).attr("data-durum", "off");
+                    $('.back-button').addClass("dNone");
+
+                }
+
+            });
+
+            $(window).resize(function () {
+                var gen = $(window).width();
+                if (gen > 767) {
+                    $("ul.anaMenu").css("display", "");
+                    $(".gizle").attr("data-durum", "off");
+
+                }
+                if (gen > 480) {
+                    $("ul.anaMenu").attr("data-durum", "off").removeAttr("style");
+                    $("ul.anaMenu > li > ul").attr("data-durum", "off").removeAttr("style");
+                    $(this).removeClass("anaAktif");
+
+                }
+            });
+
+            //$("ul.solMenu a ").click(function (e) {
+            //    var menuVarmi = $(this).parent().find("ul").length;
+            //    var durum = $(this).next("ul").attr("data-durum");
+
+            //    if (menuVarmi > 0 && durum == "off") {
+            //        $(this).parent().parent().not($(this).next("ul")).find("ul").slideUp("fast").attr("data-durum", "off");
+            //        $(this).addClass("solAktif");
+            //        $(this).next("ul").slideDown("fast").attr("data-durum", "on");
+            //    }
+            //    else if (menuVarmi > 0 && durum == "on") {
+            //        $(this).removeClass("solAktif");
+            //        $(this).next("ul").slideUp("fast").attr("data-durum", "off");
+            //    }
+            //});
+
+            $("ul.anaMenu > li > a ").click(function () {
+
+                var gen = $(window).width();
+                if (gen < 481) {
+
+                    var menuVarmi = $(this).parent().find("ul").length;
+                    var durum = $(this).next("ul").attr("data-durum");
+                    $(".anaAktif").removeClass("anaAktif");
+                    if (durum == "on") {
+                        $(this).next("ul").slideUp("fast").attr("data-durum", "off");
+                        return false;
+                    }
+                    else if (menuVarmi != 0 && durum == "off") {
+                        $("ul.anaMenu > li > ul").slideUp("fast").attr("data-durum", "off");;
+                        $(this).next("ul").slideDown("fast").attr("data-durum", "on");
+                        $(this).addClass("anaAktif");
+
+                        return false;
+                    }
+                }
+
+            });
+            /**/
+            //$(".aramaKutusu").focus(function () {
+            //    var w = $(window).width();
+            //    if (w > 1024) {
+            //        $(".gizle").addClass("disabled");
+            //        $(".menuBarCont").removeAttr("style");
+            //        $(".menuBarCont").addClass("aramaMenu").slideDown("fast");
+            //    }
+
+            //});
+            /**/
+
+            $('.aramaKutusu').focusin(function () {
+                $('.aramaMenu.dropdown').css("max-height", "1000px");
+
+            });
+
+            $('.aramaKutusu').focusout(function () {
+                $('.aramaMenu.dropdown').css("max-height", "0");
+
+            });
+
+            //$('.araCont').mouseenter(function () {
+            //    $('.aramaMenu.dropdown').css("max-height", "1000px");
+
+            //});
+
+            //$('.araCont').mouseleave(function () {
+            //    $('.aramaMenu.dropdown').css("max-height", "0");
+
+            //});
+
+            $(".aramaKutusu").blur(function () {
+                $(".menuBarCont").slideUp("fast", function () {
+                    $(".menuBarCont").removeClass("aramaMenu");
+                    $(".menuBarCont").removeAttr("style");
+                })
+                $(".gizle").removeClass("disabled");
+
+            });
+            $(window).load(function () {
+                var min = 1000;
+                $(".resimContainer > img").each(function () {
+                    if ($(this).height() < min) {
+                        min = $(this).height();
+                    }
+                });
+                $(".resimContainer").height(min);
+                $(".loadingCont").removeClass("loadingCont");
+            });
+
+        });
+  </script>
+  <link href="http://www.eksim.com.tr" rel="canonical"/>
+  <title>
+   Eksim
+  </title>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <link href="/js/slider/css/style.css" rel="stylesheet"/>
+  <script src="/js/slider/js/jquery.themepunch.plugins.min.js">
+  </script>
+  <script src="/js/slider/js/jquery.themepunch.revolution.min.js">
+  </script>
+  <link href="/js/slider/css/settings.css" rel="stylesheet"/>
+  <style>
+   #AltAlan {
+            margin: 0;
+        }
+
+        #icerik {
+            padding: 0;
+        }
+
+        #altAlan {
+            height: auto;
+        }
+  </style>
+  <meta content="http://eksim.com.tr/" name="url"/>
+  <meta content="tr" name="Content-Language"/>
+  <meta content="©2021 Eksim - Tüm Hakları Saklıdır" name="copyright"/>
+  <meta content="TTR Bilişim Hizmetleri, info@ttrbilisim.com" name="author"/>
+  <meta content="Eksim" name="description"/>
+  <meta content="Eksim" name="keywords"/>
+ </head>
+ <body>
+  <form action="/" id="form1" method="post">
+   <div class="aspNetHidden">
+    <input id="__EVENTTARGET" name="__EVENTTARGET" type="hidden" value=""/>
+    <input id="__EVENTARGUMENT" name="__EVENTARGUMENT" type="hidden" value=""/>
+    <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwULLTE3MTQ3NzcxNDYPZBYCZg9kFgICAQ8WAh4EbGFuZwUCdHIWBAIBD2QWAgIKDxYCHgRUZXh0BTY8bGluayByZWw9ImNhbm9uaWNhbCIgaHJlZj0iaHR0cDovL3d3dy5la3NpbS5jb20udHIiLz5kAgMPFgIeBmFjdGlvbgUBLxYQAgEPZBYEAgEPDxYGHwEFCUFOQSBTQVlGQR4HVG9vbFRpcAUJQU5BIFNBWUZBHgtOYXZpZ2F0ZVVybAUNL3RyL2FuYS1zYXlmYWRkAgMPFgIeC18hSXRlbUNvdW50AgUWCmYPZBYCAgEPZBYGAgEPDxYCHwEFCEtVUlVNU0FMZGQCAw8WAh8BBQhrdXJ1bXNhbGQCBQ9kFgICAQ8WAh8FAgYWDGYPZBYCAgEPFgIeBWNsYXNzZRYEAgEPDxYCHwQFFy90ci9rdXJ1bXNhbC9oYWtraW1pemRhZBYEZg8WAh8BBQpIQUtLSU1JWkRBZAIBDxYCHwEFCmhha2tpbWl6ZGFkAgMPFgIeB1Zpc2libGVoFgICAQ8WAh8FAv////8PZAIBD2QWAgIBDxYCHwZlFgQCAQ8PFgIfBAUUL3RyL2t1cnVtc2FsL3RhcmloY2VkFgRmDxYCHwEFCVRBUsSwSMOHRWQCAQ8WAh8BBQd0YXJpaGNlZAIDDxYCHwdoFgICAQ8WAh8FAv////8PZAICD2QWAgIBDxYCHwZlFgQCAQ8PFgIfBAUbL3RyL2t1cnVtc2FsL3NpcmtldC1wcm9maWxpZBYEZg8WAh8BBRLFnsSwUktFVCBQUk9GxLBMxLBkAgEPFgIfAQUOc2lya2V0LXByb2ZpbGlkAgMPFgIfB2gWAgIBDxYCHwUC/////w9kAgMPZBYCAgEPFgIfBmUWBAIBDw8WAh8EBSUvdHIva3VydW1zYWwvYmlsZ2ktdG9wbHVtdS1oaXptZXRsZXJpZBYEZg8WAh8BBRxCxLBMR8SwIFRPUExVTVUgSMSwWk1FVExFUsSwZAIBDxYCHwEFGGJpbGdpLXRvcGx1bXUtaGl6bWV0bGVyaWQCAw8WAh8HaBYCAgEPFgIfBQL/////D2QCBA9kFgICAQ8WAh8GZRYEAgEPDxYCHwQFKC90ci9rdXJ1bXNhbC9raXNpc2VsLXZlcmlsZXJpbi1rb3J1bm1hc2lkFgRmDxYCHwEFIEvEsMWexLBTRUwgVkVSxLBMRVLEsE4gS09SVU5NQVNJZAIBDxYCHwEFG2tpc2lzZWwtdmVyaWxlcmluLWtvcnVubWFzaWQCAw8WAh8HaBYCAgEPFgIfBQL/////D2QCBQ9kFgICAQ8WAh8GZRYEAgEPDxYCHwQFNC90ci9rdXJ1bXNhbC9raXNpc2VsLXZlcmktc2FrbGFtYS12ZS1pbWhhLXBvbGl0aWthc2lkFgRmDxYCHwEFLkvEsMWexLBTRUwgVkVSxLAgU0FLTEFNQSBWRSDEsE1IQSBQT0zEsFTEsEtBU0lkAgEPFgIfAQUna2lzaXNlbC12ZXJpLXNha2xhbWEtdmUtaW1oYS1wb2xpdGlrYXNpZAIDDxYCHwdoFgICAQ8WAh8FAv////8PZAIBD2QWAgIBD2QWBgIBDw8WAh8BBQpTRUtUw5ZSTEVSZGQCAw8WAh8BBQlzZWt0b3JsZXJkAgUPZBYCAgEPFgIfBQIDFgZmD2QWAgIBD2QWBAIBDw9kFgIfBgURbWVudS1saW5rMiBmaXJzdDIWBGYPFgIfAQUHRU5FUkrEsGQCAQ8WAh8BBQZlbmVyamlkAgMPZBYCAgEPFgIfBQIGFgxmD2QWAgIBDw8WAh8EBSkvdHIvc2VrdG9ybGVyL3J1emdhci1lbmVyamlzaS1zYW50cmFsbGVyaWQWBGYPFgIfAQUcUsO8emdhciBFbmVyamlzaSBTYW50cmFsbGVyaWQCAQ8WAh8BBRtydXpnYXItZW5lcmppc2ktc2FudHJhbGxlcmlkAgEPZBYCAgEPDxYCHwQFJy90ci9zZWt0b3JsZXIvaGlkcm9lbGVrdHJpay1zYW50cmFsbGVyaWQWBGYPFgIfAQUZSGlkcm9lbGVrdHJpayBTYW50cmFsbGVyaWQCAQ8WAh8BBRloaWRyb2VsZWt0cmlrLXNhbnRyYWxsZXJpZAICD2QWAgIBDw8WAh8EBR4vdHIvc2VrdG9ybGVyL2VsZWt0cmlrLWRhZ2l0aW1kFgRmDxYCHwEFE0VsZWt0cmlrIERhxJ/EsXTEsW1kAgEPFgIfAQUQZWxla3RyaWstZGFnaXRpbWQCAw9kFgICAQ8PFgIfBAUmL3RyL3Nla3Rvcmxlci9lbGVrdHJpay1wZXJha2VuZGUtc2F0aXNkFgRmDxYCHwEFGkVsZWt0cmlr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AQUIaWxldGlzaW1kAgUPZBYCAgEPFgIfBQL/////D2QCAw8PFgIfBAUNL3RyL2FuYS1zYXlmYWQWAmYPDxYEHg1BbHRlcm5hdGVUZXh0BQVFa3NpbR4ISW1hZ2VVcmwFXC9pbWFnZXMvdXBsb2Fkcy8wNWIxYWI1MmU5M2Y0NGYyOTYyYTlkNmIyMmQ0OGY0MV82MDk3Y2IwZTIyNDU0NTNmOTNjYjQ5NTY5Mzg0YTJkNl9sb2dvLTEucG5nZGQCBQ9kFgICAw8PZBYCHgtwbGFjZWhvbGRlcmVkAgcPZBYCAgEPFgIfBQIFFgpmD2QWAgIBD2QWBgIBDw8WAh8BBQhLVVJVTVNBTGRkAgMPFgIfAQUIa3VydW1zYWxkAgUPZBYCAgEPFgIfBQIGFgxmD2QWAgIBDxYCHwZlFgICAQ8PFgIfBAUXL3RyL2t1cnVtc2FsL2hha2tpbWl6ZGFkFgRmDxYCHwEFCkhBS0tJTUlaREFkAgEPFgIfAQUKaGFra2ltaXpkYWQCAQ9kFgICAQ8WAh8GZRYCAgEPDxYCHwQFFC90ci9rdXJ1bXNhbC90YXJpaGNlZBYEZg8WAh8BBQlUQVLEsEjDh0VkAgEPFgIfAQUHdGFyaWhjZWQCAg9kFgICAQ8WAh8GZRYCAgEPDxYCHwQFGy90ci9rdXJ1bXNhbC9zaXJrZXQtcHJvZmlsaWQWBGYPFgIfAQUSxZ7EsFJLRVQgUFJPRsSwTMSwZAIBDxYCHwEFDnNpcmtldC1wcm9maWxpZAIDD2QWAgIBDxYCHwZlFgICAQ8PFgIfBAUlL3RyL2t1cnVtc2FsL2JpbGdpLXRvcGx1bXUtaGl6bWV0bGVyaWQWBGYPFgIfAQUcQsSwTEfEsCBUT1BMVU1VIEjEsFpNRVRMRVLEsGQCAQ8WAh8BBRhiaWxnaS10b3BsdW11LWhpem1ldGxlcmlkAgQPZBYCAgEPFgIfBmUWAgIBDw8WAh8EBSgvdHIva3VydW1zYWwva2lzaXNlbC12ZXJpbGVyaW4ta29ydW5tYXNpZBYEZg8WAh8BBSBLxLDFnsSwU0VMIFZFUsSwTEVSxLBOIEtPUlVOTUFTSWQCAQ8WAh8BBRtraXNpc2VsLXZlcmlsZXJpbi1rb3J1bm1hc2lkAgUPZBYCAgEPFgIfBmUWAgIBDw8WAh8EBTQvdHIva3VydW1zYWwva2lzaXNlbC12ZXJpLXNha2xhbWEtdmUtaW1oYS1wb2xpdGlrYXNpZBYEZg8WAh8BBS5LxLDFnsSwU0VMIFZFUsSwIFNBS0xBTUEgVkUgxLBNSEEgUE9MxLBUxLBLQVNJZAIBDxYCHwEFJ2tpc2lzZWwtdmVyaS1zYWtsYW1hLXZlLWltaGEtcG9saXRpa2FzaWQCAQ9kFgICAQ9kFgYCAQ8PFgIfAQUKU0VLVMOWUkxFUmRkAgMPFgIfAQUJc2VrdG9ybGVyZAIFD2QWAgIBDxYCHwUCAxYGZg9kFgICAQ8WAh8GZRYCAgEPDxYCHwQFFC90ci9zZWt0b3JsZXIvZW5lcmppZBYEZg8WAh8BBQdFTkVSSsSwZAIBDxYCHwEFBmVuZXJqaWQCAQ9kFgICAQ8WAh8GZRYCAgEPDxYCHwQFEi90ci9zZWt0b3JsZXIvZ2lkYWQWBGYPFgIfAQUER0lEQWQCAQ8WAh8BBQRnaWRhZAICD2QWAgIBDxYCHwZlFgICAQ8PFgIfBAUZL3RyL3Nla3Rvcmxlci9nYXlyaW1lbmt1bGQWBGYPFgIfAQUMR0FZUsSwTUVOS1VMZAIBDxYCHwEFC2dheXJpbWVua3VsZAICD2QWAgIBD2QWBgIBDw8WAh8BBRHEsE5TQU4gS0FZTkFLTEFSSWRkAgMPFgIfAQUQaW5zYW4ta2F5bmFrbGFyaWQCBQ9kFgICAQ8WAh8FAgMWBmYPZBYCAgEPFgIfBmUWAgIBDw8WAh8EBSAvdHIvaW5zYW4ta2F5bmFrbGFyaS9wb2xpdGlrYW1pemQWBGYPFgIfAQUNUE9MxLBUxLBLQU1JWmQCAQ8WAh8BBQtwb2xpdGlrYW1pemQCAQ9kFgICAQ8WAh8GZRYCAgEPDxYCHwQFJy90ci9pbnNhbi1rYXluYWtsYXJpL3BlcmZvcm1hbnMtc2lzdGVtaWQWBGYPFgIfAQUUUEVSRk9STUFOUyBTxLBTVEVNxLBkAgEPFgIfAQUScGVyZm9ybWFucy1zaXN0ZW1pZAICD2QWAgIBDxYCHwZlFgICAQ8PFgIfBAUdL3RyL2luc2FuLWtheW5ha2xhcmkvaXNlLWFsaW1kFgRmDxYCHwEFCsSwxZ5FIEFMSU1kAgEPFgIfAQUIaXNlLWFsaW1kAgMPZBYCAgEPZBYGAgEPDxYCHwEFC0JBU0lOIE9EQVNJZGQCAw8WAh8BBQtiYXNpbi1vZGFzaWQCBQ9kFgICAQ8WAh8FAgIWBGYPZBYCAgEPFgIfBmUWAgIBDw8WAh8EBRgvdHIvYmFzaW4tb2Rhc2kvaGFiZXJsZXJkFgRmDxYCHwEFCEhBQkVSTEVSZAIBDxYCHwEFCGhhYmVybGVyZAIBD2QWAgIBDxYCHwZlFgICAQ8PFgIfBAUaL3RyL2Jhc2luLW9kYXNpL2JpemUtc29ydW5kFgRmDxYCHwEFC0LEsFpFIFNPUlVOZAIBDxYCHwEFCmJpemUtc29ydW5kAgQPZBYCAgEPZBYGAgEPDxYEHwEFDMSwTEVUxLDFnsSwTR8EBQwvdHIvaWxldGlzaW1kZAIDDxYCHwEFCGlsZXRpc2ltZAIFD2QWAgIBDxYCHwUC/////w9kAgkPDxYCHwQFDS90ci9hbmEtc2F5ZmFkFgJmDxYCHwEFAlRSZAILDw8WAh8EBQ0vZW4vaG9tZS1wYWdlZBYCZg8WAh8BBQJFTmQCDQ9kFgICAQ8WAh8FAggWEGYPZBYEZg8VAkovaW1hZ2VzL3VwbG9hZHMvMjFiYjJlZjNmZjk3NDRiYTg5Mzg0Y2U3ODRkMzZmYTdfZWtzaW0td2ViLXNsaWRlci1mb3RvLmpwZ1s8YSBocmVmPSIvdHIvc2VrdG9ybGVyL2VuZXJqaSI+WWVuaWxlbmViaWxpciBrYXluYWtsYXJkYW4gZW5lcmppIMO8cmV0aW1pIDxiPjYyNiBNVzwvYj48L2E+ZAIBDw8WAh8BBVs8YSBocmVmPSIvdHIvc2VrdG9ybGVyL2VuZXJqaSI+WWVuaWxlbmViaWxpciBrYXluYWtsYXJkYW4gZW5lcmppIMO8cmV0aW1pIDxiPjYyNiBNVzwvYj48L2E+ZGQCAQ9kFgRmDxUCSy9pbWFnZXMvdXBsb2Fkcy9lOTEwYjIyZTkyMjQ0NjVjYmMwMzM4NjAwMTBjNWRjNl9la3NpbS13ZWItc2xpZGVyLWZvdG8yLmpwZ208YSBocmVmPSIvdHIvc2VrdG9ybGVyL2VsZWt0cmlrLXRvcHRhbi1zYXRpcyI+RWxla3RyaWsgdG9wdGFuIHNhdMSxxZ90YSA8Yj5iYcWfYXLEsWzEsSByaXNrIHnDtm5ldGltaTwvYj48L2E+ZAIBDw8WAh8BBW08YSBocmVmPSIvdHIvc2VrdG9ybGVyL2VsZWt0cmlrLXRvcHRhbi1zYXRpcyI+RWxla3RyaWsgdG9wdGFuIHNhdMSxxZ90YSA8Yj5iYcWfYXLEsWzEsSByaXNrIHnDtm5ldGltaTwvYj48L2E+ZGQCAg9kFgRmDxUCQi9pbWFnZXMvdXBsb2Fkcy81Yjg0OWRkN2YxODY0MWNkOTM4NjljN2YyZmNlMjYyNl9zbGlkZXJkYWdpdGltLmpwZ3M8YSBocmVmPSIvdHIvc2VrdG9ybGVyL2VsZWt0cmlrLWRhZ2l0aW0iPkFsdMSxIGlsZGUgecSxbGzEsWsgZWxla3RyaWsgZGHEn8SxdMSxbcSxIDxiPjIzIG1pbHlhciBraWxvdmF0c2FhdDwvYj48L2E+ZAIBDw8WAh8BBXM8YSBocmVmPSIvdHIvc2VrdG9ybGVyL2VsZWt0cmlrLWRhZ2l0aW0iPkFsdMSxIGlsZGUgecSxbGzEsWsgZWxla3RyaWsgZGHEn8SxdMSxbcSxIDxiPjIzIG1pbHlhciBraWxvdmF0c2FhdDwvYj48L2E+ZGQCAw9kFgRmDxUCTC9pbWFnZXMvdXBsb2Fkcy80NDQ4OTEwZjNkNWI0MGE2YTU1ODRjZjEzN2RkYWMxZl9la3NpbS13ZWItc2xpZGVyLWZvdG8xMi5qcGdnPGEgaHJlZj0iL3RyL3Nla3Rvcmxlci9lbGVrdHJpay1wZXJha2VuZGUtc2F0aXMiPkVsZWt0cmlrIHBlcmFrZW5kZSBzYXTEscWfdGEgPGI+MiBtaWx5b24gYWJvbmU8L2I+PC9hPmQCAQ8PFgIfAQVnPGEgaHJlZj0iL3RyL3Nla3Rvcmxlci9lbGVrdHJpay1wZXJha2VuZGUtc2F0aXMiPkVsZWt0cmlrIHBlcmFrZW5kZSBzYXTEscWfdGEgPGI+MiBtaWx5b24gYWJvbmU8L2I+PC9hPmRkAgQPZBYEZg8VAksvaW1hZ2VzL3VwbG9hZHMvYTY5OGE5ZjU2M2NiNDE2ZGJjYWNkMTQzODdjM2IzMzlfZWtzaW0td2ViLXNsaWRlci1mb3RvNi5qcGdkPGEgaHJlZj0iL3RyL3Nla3Rvcmxlci9kb2dhbGdhei1pdGhhbGF0Ij5ZxLFsbMSxayBkb8SfYWwgZ2F6IGl0aGFsYXTEsSA8Yj4xIG1pbHlhciBtZXRyZWvDvHA8L2I+PC9hPmQCAQ8PFgIfAQVkPGEgaHJlZj0iL3RyL3Nla3Rvcmxlci9kb2dhbGdhei1pdGhhbGF0Ij5ZxLFsbMSxayBkb8SfYWwgZ2F6IGl0aGFsYXTEsSA8Yj4xIG1pbHlhciBtZXRyZWvDvHA8L2I+PC9hPmRkAgUPZBYEZg8VAksvaW1hZ2VzL3VwbG9hZHMvODA0MzM1YTVkNzM5NGFkZWE5MjQyMzE0Y2UwM2JhYTZfZWtzaW0td2ViLXNsaWRlci1mb3RvMy5qcGdWPGEgaHJlZj0iL3RyL3Nla3Rvcmxlci9zaW5hbmdpbCI+MTk2Myd0ZW4gYmVyaSBzZXZpbGVuIGxpZGVyIG1hcmthIDxiPlNpbmFuZ2lsPC9iPjwvYT5kAgEPDxYCHwEFVjxhIGhyZWY9Ii90ci9zZWt0b3JsZXIvc2luYW5naWwiPjE5NjMndGVuIGJlcmkgc2V2aWxlbiBsaWRlciBtYXJrYSA8Yj5TaW5hbmdpbDwvYj48L2E+ZGQCBg9kFgRmDxUCSy9pbWFnZXMvdXBsb2Fkcy80Zjg5M2QyZGY3YjA0MTZiODM0OThjNGI5NTYxZDNjNF9la3NpbS13ZWItc2xpZGVyLWZvdG80LmpwZ1M8YSBocmVmPSIvdHIvc2VrdG9ybGVyL2dpZGEiPlBlcmFrZW5kZSB2ZSBlbmTDvHN0cml5ZWwgdW5kYSA8Yj5wYXphciBsaWRlcmk8L2I+PC9hPmQCAQ8PFgIfAQVTPGEgaHJlZj0iL3RyL3Nla3Rvcmxlci9naWRhIj5QZXJha2VuZGUgdmUgZW5kw7xzdHJpeWVsIHVuZGEgPGI+cGF6YXIgbGlkZXJpPC9iPjwvYT5kZAIHD2QWBGYPFQJLL2ltYWdlcy91cGxvYWRzL2RiZThkMzVkNmMyOTRmODM5M2RmMGE5ZDcwZWUwMjAyX2Vrc2ltLXdlYi1zbGlkZXItZm90bzcuanBnZDxhIGhyZWY9Ii90ci9zZWt0b3JsZXIvZ2F5cmltZW5rdWwiPkdheXJpbWVua3VsIHlhdMSxcsSxbWxhcsSxIDxiPjEgbWlseW9uIDMyMiBiaW4gbWV0cmVrYXJlPC9iPjwvYT5kAgEPDxYCHwEFZDxhIGhyZWY9Ii90ci9zZWt0b3JsZXIvZ2F5cmltZW5rdWwiPkdheXJpbWVua3VsIHlhdMSxcsSxbWxhcsSxIDxiPjEgbWlseW9uIDMyMiBiaW4gbWV0cmVrYXJlPC9iPjwvYT5kZAIPDw8WAh8BBSsmY29weTsyMDIxIEVrc2ltIC0gVMO8bSBIYWtsYXLEsSBTYWtsxLFkxLFyZGRk4ivhXIaTS/OpVM9g60hUpQdsEeDAlPZjxRwRD9tLADw="/>
+   </div>
+   <script type="text/javascript">
+    //<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+   </script>
+   <div class="aspNetHidden">
+    <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="CA0B0334"/>
+    <input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="/wEdAAPL/DcY3Lfp3vv/6FD7EiE7D8ZjLpcyq6t+p4xvoub/wlgDS3aD/dPo+Ro8pLOmpkM2hugHvYLEmJ890g48unMmV/RWDvX49sU8TpNHoXoclA=="/>
+   </div>
+   <div id="kapsul">
+    <div class="menuBarCont">
+     <div class="menuBarTable">
+      <ul class="full-menu-area anaMenu" id="ulSayfaTabloAnaKategori">
+       <li>
+        <a class="menu-link" href="/tr/ana-sayfa" id="hlAnaSayfa" title="ANA SAYFA">
+         ANA SAYFA
+        </a>
+       </li>
+       <li class="dropdown-menu" id="rptrSayfaTabloAnaKategori_liAnaSayfa_0">
+        <a class="menu-link first" id="rptrSayfaTabloAnaKategori_hlSayfalarTablo_0">
+         KURUMSAL
+        </a>
+        <ul id="rptrSayfaTabloAnaKategori_ulSayfalarTablo_0">
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_liSayfalar_0">
+          <a href="/tr/kurumsal/hakkimizda" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_hlLink_0">
+           HAKKIMIZDA
+          </a>
+         </li>
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_liSayfalar_1">
+          <a href="/tr/kurumsal/tarihce" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_hlLink_1">
+           TARİHÇE
+          </a>
+         </li>
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_liSayfalar_2">
+          <a href="/tr/kurumsal/sirket-profili" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_hlLink_2">
+           ŞİRKET PROFİLİ
+          </a>
+         </li>
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_liSayfalar_3">
+          <a href="/tr/kurumsal/bilgi-toplumu-hizmetleri" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_hlLink_3">
+           BİLGİ TOPLUMU HİZMETLERİ
+          </a>
+         </li>
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_liSayfalar_4">
+          <a href="/tr/kurumsal/kisisel-verilerin-korunmasi" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_hlLink_4">
+           KİŞİSEL VERİLERİN KORUNMASI
+          </a>
+         </li>
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_liSayfalar_5">
+          <a href="/tr/kurumsal/kisisel-veri-saklama-ve-imha-politikasi" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_0_hlLink_5">
+           KİŞİSEL VERİ SAKLAMA VE İMHA POLİTİKASI
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-menu" id="rptrSayfaTabloAnaKategori_liAnaSayfa_1">
+        <a class="menu-link first" id="rptrSayfaTabloAnaKategori_hlSayfalarTablo_1">
+         SEKTÖRLER
+        </a>
+        <ul id="rptrSayfaTabloAnaKategori_ulSayfalarTablo_1">
+         <li class="dropdown-menu" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_liSayfalar_0">
+          <a class="menu-link2 first2" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_hlLink_0">
+           ENERJİ
+          </a>
+          <ul id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_ulSayfalarAlt_0">
+           <li>
+            <a href="/tr/sektorler/ruzgar-enerjisi-santralleri" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_0_hlLink_0">
+             Rüzgar Enerjisi Santralleri
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/hidroelektrik-santralleri" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_0_hlLink_1">
+             Hidroelektrik Santralleri
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/elektrik-dagitim" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_0_hlLink_2">
+             Elektrik Dağıtım
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/elektrik-perakende-satis" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_0_hlLink_3">
+             Elektrik Perakende Satış
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/elektrik-toptan-satis" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_0_hlLink_4">
+             Elektrik Toptan Satış
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/dogal-gaz-ithalat" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_0_hlLink_5">
+             Doğal Gaz İthalat
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-menu" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_liSayfalar_1">
+          <a class="menu-link2 first2" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_hlLink_1">
+           GIDA
+          </a>
+          <ul id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_ulSayfalarAlt_1">
+           <li>
+            <a href="/tr/sektorler/eksun" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_1_hlLink_0">
+             Eksun
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/altinapa" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_1_hlLink_1">
+             Altınapa
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/sinangil" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_1_hlLink_2">
+             Sinangil
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-menu" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_liSayfalar_2">
+          <a class="menu-link2 first2" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_hlLink_2">
+           GAYRİMENKUL
+          </a>
+          <ul id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_ulSayfalarAlt_2">
+           <li>
+            <a href="/tr/sektorler/incesu" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_2_hlLink_0">
+             İncesu
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/kat" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_2_hlLink_1">
+             Kat
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/ottoman" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_2_hlLink_2">
+             Ottoman
+            </a>
+           </li>
+           <li>
+            <a href="/tr/sektorler/saf" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_1_rptrSayfalarAlt_2_hlLink_3">
+             Saf
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-menu" id="rptrSayfaTabloAnaKategori_liAnaSayfa_2">
+        <a class="menu-link first" id="rptrSayfaTabloAnaKategori_hlSayfalarTablo_2">
+         İNSAN KAYNAKLARI
+        </a>
+        <ul id="rptrSayfaTabloAnaKategori_ulSayfalarTablo_2">
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_2_liSayfalar_0">
+          <a href="/tr/insan-kaynaklari/politikamiz" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_2_hlLink_0">
+           POLİTİKAMIZ
+          </a>
+         </li>
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_2_liSayfalar_1">
+          <a href="/tr/insan-kaynaklari/performans-sistemi" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_2_hlLink_1">
+           PERFORMANS SİSTEMİ
+          </a>
+         </li>
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_2_liSayfalar_2">
+          <a href="/tr/insan-kaynaklari/ise-alim" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_2_hlLink_2">
+           İŞE ALIM
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-menu" id="rptrSayfaTabloAnaKategori_liAnaSayfa_3">
+        <a class="menu-link first" id="rptrSayfaTabloAnaKategori_hlSayfalarTablo_3">
+         BASIN ODASI
+        </a>
+        <ul id="rptrSayfaTabloAnaKategori_ulSayfalarTablo_3">
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_3_liSayfalar_0">
+          <a href="/tr/basin-odasi/haberler" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_3_hlLink_0">
+           HABERLER
+          </a>
+         </li>
+         <li class="" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_3_liSayfalar_1">
+          <a href="/tr/basin-odasi/bize-sorun" id="rptrSayfaTabloAnaKategori_rptrSayfalarTablo_3_hlLink_1">
+           BİZE SORUN
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li id="rptrSayfaTabloAnaKategori_liAnaSayfa_4">
+        <a class="menu-link first" href="/tr/iletisim" id="rptrSayfaTabloAnaKategori_hlSayfalarTablo_4">
+         İLETİŞİM
+        </a>
+        <ul id="rptrSayfaTabloAnaKategori_ulSayfalarTablo_4">
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="headerContainer">
+     <div class="ortala clearFix">
+      <a class="back-button" href="#">
+       <i aria-hidden="true" class="fa fa-arrow-left">
+       </i>
+      </a>
+      <a class="logoButon fl toBlur" href="/tr/ana-sayfa" id="hlLogo">
+       <img alt="Eksim" class="logoResim" id="imgLogo" src="/images/uploads/05b1ab52e93f44f2962a9d6b22d48f41_6097cb0e2245453f93cb49569384a2d6_logo-1.png"/>
+      </a>
+      <div class="headerSag fr padT10">
+       <div class="araCont clearFix toBlur">
+        <div onkeypress="javascript:return WebForm_FireDefaultButton(event, 'lbArama')">
+         <a class="aramaButon fr" href="javascript:__doPostBack('ctl00$lbArama','')" id="lbArama">
+         </a>
+         <input class="aramaKutusu fl" id="txtArama" name="ctl00$txtArama" placeholder="" type="text"/>
+        </div>
+        <div class="aramaMenu dropdown">
+         <div class="menuBarTable">
+          <ul class="anaMenu" id="ulSayfaMenuAnaKategori">
+           <li class="dropdown-menu" id="rptrSayfaMenuAnaKategori_liAnaSayfa_0">
+            <a class="Default menu-link" id="rptrSayfaMenuAnaKategori_hlSayfalarMenu_0">
+             KURUMSAL
+            </a>
+            <ul id="rptrSayfaMenuAnaKategori_ulSayfalarMenu_0">
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_liSayfalar_0">
+              <a href="/tr/kurumsal/hakkimizda" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_hlLink_0">
+               HAKKIMIZDA
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_liSayfalar_1">
+              <a href="/tr/kurumsal/tarihce" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_hlLink_1">
+               TARİHÇE
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_liSayfalar_2">
+              <a href="/tr/kurumsal/sirket-profili" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_hlLink_2">
+               ŞİRKET PROFİLİ
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_liSayfalar_3">
+              <a href="/tr/kurumsal/bilgi-toplumu-hizmetleri" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_hlLink_3">
+               BİLGİ TOPLUMU HİZMETLERİ
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_liSayfalar_4">
+              <a href="/tr/kurumsal/kisisel-verilerin-korunmasi" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_hlLink_4">
+               KİŞİSEL VERİLERİN KORUNMASI
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_liSayfalar_5">
+              <a href="/tr/kurumsal/kisisel-veri-saklama-ve-imha-politikasi" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_0_hlLink_5">
+               KİŞİSEL VERİ SAKLAMA VE İMHA POLİTİKASI
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-menu" id="rptrSayfaMenuAnaKategori_liAnaSayfa_1">
+            <a class="Default menu-link" id="rptrSayfaMenuAnaKategori_hlSayfalarMenu_1">
+             SEKTÖRLER
+            </a>
+            <ul id="rptrSayfaMenuAnaKategori_ulSayfalarMenu_1">
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_1_liSayfalar_0">
+              <a href="/tr/sektorler/enerji" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_1_hlLink_0">
+               ENERJİ
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_1_liSayfalar_1">
+              <a href="/tr/sektorler/gida" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_1_hlLink_1">
+               GIDA
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_1_liSayfalar_2">
+              <a href="/tr/sektorler/gayrimenkul" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_1_hlLink_2">
+               GAYRİMENKUL
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-menu" id="rptrSayfaMenuAnaKategori_liAnaSayfa_2">
+            <a class="Default menu-link" id="rptrSayfaMenuAnaKategori_hlSayfalarMenu_2">
+             İNSAN KAYNAKLARI
+            </a>
+            <ul id="rptrSayfaMenuAnaKategori_ulSayfalarMenu_2">
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_2_liSayfalar_0">
+              <a href="/tr/insan-kaynaklari/politikamiz" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_2_hlLink_0">
+               POLİTİKAMIZ
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_2_liSayfalar_1">
+              <a href="/tr/insan-kaynaklari/performans-sistemi" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_2_hlLink_1">
+               PERFORMANS SİSTEMİ
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_2_liSayfalar_2">
+              <a href="/tr/insan-kaynaklari/ise-alim" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_2_hlLink_2">
+               İŞE ALIM
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-menu" id="rptrSayfaMenuAnaKategori_liAnaSayfa_3">
+            <a class="Default menu-link" id="rptrSayfaMenuAnaKategori_hlSayfalarMenu_3">
+             BASIN ODASI
+            </a>
+            <ul id="rptrSayfaMenuAnaKategori_ulSayfalarMenu_3">
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_3_liSayfalar_0">
+              <a href="/tr/basin-odasi/haberler" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_3_hlLink_0">
+               HABERLER
+              </a>
+             </li>
+             <li class="" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_3_liSayfalar_1">
+              <a href="/tr/basin-odasi/bize-sorun" id="rptrSayfaMenuAnaKategori_rptrSayfalarMenu_3_hlLink_1">
+               BİZE SORUN
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li id="rptrSayfaMenuAnaKategori_liAnaSayfa_4">
+            <a class="Default menu-link" href="/tr/iletisim" id="rptrSayfaMenuAnaKategori_hlSayfalarMenu_4">
+             İLETİŞİM
+            </a>
+            <ul id="rptrSayfaMenuAnaKategori_ulSayfalarMenu_4">
+            </ul>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <ul class="dilListesi toBlur">
+        <li>
+         <a href="/tr/ana-sayfa" id="hlAnaSayfaTR">
+          TR
+         </a>
+        </li>
+        <li>
+         <a href="/en/home-page" id="hlAnaSayfaEN">
+          EN
+         </a>
+        </li>
+       </ul>
+       <span class="gizle" data-durum="off">
+        <span class="bar-solid solid-top">
+        </span>
+        <span class="bar-solid solid-center">
+        </span>
+        <span class="bar-solid solid-bottom">
+        </span>
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="toBlur" id="icerik">
+     <div class="tp-banner-container toBlur">
+      <div class="tp-banner">
+       <ul>
+        <li data-masterspeed="1500" data-slotamount="7" data-transition="boxfade">
+         <img alt='&lt;a href="/tr/sektorler/enerji"&gt;Yenilenebilir kaynaklardan enerji üretimi &lt;b&gt;626 MW&lt;/b&gt;&lt;/a&gt;' data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="/images/uploads/21bb2ef3ff9744ba89384ce784d36fa7_eksim-web-slider-foto.jpg"/>
+         <div class="slogan tp-caption sfl" data-easing="Power4.easeOut" data-speed="500" data-x="left" data-y="700">
+          <div class="sloganCont">
+           <div class="sloganDetay">
+            <span class="beyaz" id="ContentPlaceHolder1_rptrBanner_lblSlogan_0">
+             <a href="/tr/sektorler/enerji">
+              Yenilenebilir kaynaklardan enerji üretimi
+              <b>
+               626 MW
+              </b>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li data-masterspeed="1500" data-slotamount="7" data-transition="boxfade">
+         <img alt='&lt;a href="/tr/sektorler/elektrik-toptan-satis"&gt;Elektrik toptan satışta &lt;b&gt;başarılı risk yönetimi&lt;/b&gt;&lt;/a&gt;' data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="/images/uploads/e910b22e9224465cbc033860010c5dc6_eksim-web-slider-foto2.jpg"/>
+         <div class="slogan tp-caption sfl" data-easing="Power4.easeOut" data-speed="500" data-x="left" data-y="700">
+          <div class="sloganCont">
+           <div class="sloganDetay">
+            <span class="beyaz" id="ContentPlaceHolder1_rptrBanner_lblSlogan_1">
+             <a href="/tr/sektorler/elektrik-toptan-satis">
+              Elektrik toptan satışta
+              <b>
+               başarılı risk yönetimi
+              </b>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li data-masterspeed="1500" data-slotamount="7" data-transition="boxfade">
+         <img alt='&lt;a href="/tr/sektorler/elektrik-dagitim"&gt;Altı ilde yıllık elektrik dağıtımı &lt;b&gt;23 milyar kilovatsaat&lt;/b&gt;&lt;/a&gt;' data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="/images/uploads/5b849dd7f18641cd93869c7f2fce2626_sliderdagitim.jpg"/>
+         <div class="slogan tp-caption sfl" data-easing="Power4.easeOut" data-speed="500" data-x="left" data-y="700">
+          <div class="sloganCont">
+           <div class="sloganDetay">
+            <span class="beyaz" id="ContentPlaceHolder1_rptrBanner_lblSlogan_2">
+             <a href="/tr/sektorler/elektrik-dagitim">
+              Altı ilde yıllık elektrik dağıtımı
+              <b>
+               23 milyar kilovatsaat
+              </b>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li data-masterspeed="1500" data-slotamount="7" data-transition="boxfade">
+         <img alt='&lt;a href="/tr/sektorler/elektrik-perakende-satis"&gt;Elektrik perakende satışta &lt;b&gt;2 milyon abone&lt;/b&gt;&lt;/a&gt;' data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="/images/uploads/4448910f3d5b40a6a5584cf137ddac1f_eksim-web-slider-foto12.jpg"/>
+         <div class="slogan tp-caption sfl" data-easing="Power4.easeOut" data-speed="500" data-x="left" data-y="700">
+          <div class="sloganCont">
+           <div class="sloganDetay">
+            <span class="beyaz" id="ContentPlaceHolder1_rptrBanner_lblSlogan_3">
+             <a href="/tr/sektorler/elektrik-perakende-satis">
+              Elektrik perakende satışta
+              <b>
+               2 milyon abone
+              </b>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li data-masterspeed="1500" data-slotamount="7" data-transition="boxfade">
+         <img alt='&lt;a href="/tr/sektorler/dogalgaz-ithalat"&gt;Yıllık doğal gaz ithalatı &lt;b&gt;1 milyar metreküp&lt;/b&gt;&lt;/a&gt;' data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="/images/uploads/a698a9f563cb416dbcacd14387c3b339_eksim-web-slider-foto6.jpg"/>
+         <div class="slogan tp-caption sfl" data-easing="Power4.easeOut" data-speed="500" data-x="left" data-y="700">
+          <div class="sloganCont">
+           <div class="sloganDetay">
+            <span class="beyaz" id="ContentPlaceHolder1_rptrBanner_lblSlogan_4">
+             <a href="/tr/sektorler/dogalgaz-ithalat">
+              Yıllık doğal gaz ithalatı
+              <b>
+               1 milyar metreküp
+              </b>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li data-masterspeed="1500" data-slotamount="7" data-transition="boxfade">
+         <img alt='&lt;a href="/tr/sektorler/sinangil"&gt;1963' beri="" lider="" marka="" sevilen="" src="/images/uploads/804335a5d7394adea9242314ce03baa6_eksim-web-slider-foto3.jpg" ten=""/>
+         Sinangil' data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" /&gt;
+         <div class="slogan tp-caption sfl" data-easing="Power4.easeOut" data-speed="500" data-x="left" data-y="700">
+          <div class="sloganCont">
+           <div class="sloganDetay">
+            <span class="beyaz" id="ContentPlaceHolder1_rptrBanner_lblSlogan_5">
+             <a href="/tr/sektorler/sinangil">
+              1963'ten beri sevilen lider marka
+              <b>
+               Sinangil
+              </b>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li data-masterspeed="1500" data-slotamount="7" data-transition="boxfade">
+         <img alt='&lt;a href="/tr/sektorler/gida"&gt;Perakende ve endüstriyel unda &lt;b&gt;pazar lideri&lt;/b&gt;&lt;/a&gt;' data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="/images/uploads/4f893d2df7b0416b83498c4b9561d3c4_eksim-web-slider-foto4.jpg"/>
+         <div class="slogan tp-caption sfl" data-easing="Power4.easeOut" data-speed="500" data-x="left" data-y="700">
+          <div class="sloganCont">
+           <div class="sloganDetay">
+            <span class="beyaz" id="ContentPlaceHolder1_rptrBanner_lblSlogan_6">
+             <a href="/tr/sektorler/gida">
+              Perakende ve endüstriyel unda
+              <b>
+               pazar lideri
+              </b>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li data-masterspeed="1500" data-slotamount="7" data-transition="boxfade">
+         <img alt='&lt;a href="/tr/sektorler/gayrimenkul"&gt;Gayrimenkul yatırımları &lt;b&gt;1 milyon 322 bin metrekare&lt;/b&gt;&lt;/a&gt;' data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="/images/uploads/dbe8d35d6c294f8393df0a9d70ee0202_eksim-web-slider-foto7.jpg"/>
+         <div class="slogan tp-caption sfl" data-easing="Power4.easeOut" data-speed="500" data-x="left" data-y="700">
+          <div class="sloganCont">
+           <div class="sloganDetay">
+            <span class="beyaz" id="ContentPlaceHolder1_rptrBanner_lblSlogan_7">
+             <a href="/tr/sektorler/gayrimenkul">
+              Gayrimenkul yatırımları
+              <b>
+               1 milyon 322 bin metrekare
+              </b>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <script type="text/javascript">
+      jQuery(document).ready(function () {
+            jQuery('.tp-banner').revolution(
+             {
+                 delay: 4000,
+                 startwidth: 1200,
+                 startheight: 1080,
+                 hideThumbs: 10,
+                 fullWidth: "off",
+                 fullScreen: "on",
+                 navigationType: "none",
+                 navigationArrows: "solo",
+                 navigationStyle: "preview1",
+                 //forceFullWidth: "on",
+                 drag_block_vertical: false
+                 //fullScreenOffsetContainer: ".headerContainer"
+             });
+        });
+        $(document).ready(function () {
+            $('.gizle').click(function () {
+                if ($('.gizle').attr("data-durum") == "on") {
+                    $('.headerContainer').css("background", "transparent");
+                } else {
+                    $('.headerContainer').css("background", "#fff");
+                }
+            });
+
+        });
+     </script>
+    </div>
+   </div>
+   <div class="toBlur" id="altAlan">
+    <div class="blur">
+    </div>
+    <div class="ftAlt">
+     <div class="ortala clearFix">
+      <span class="copy" id="lblSabitCopyright">
+       ©2021 Eksim - Tüm Hakları Saklıdır
+      </span>
+     </div>
+    </div>
+   </div>
+   <script type="text/javascript">
+    $(document).ready(function () {
+
+                $('ul.anaMenu.full-menu-area li.dropdown-menu .first').click(function () {
+                    event.preventDefault();
+                    $(this).parent().addClass("active");
+                    $('ul.anaMenu.full-menu-area li.dropdown-menu .first').removeClass("bounceInLeft");
+                    $('.active').parent().addClass("activeWrap");
+                    $('ul.anaMenu.full-menu-area .menu-link').addClass('bounceOutLeft');
+                    $('ul.anaMenu.full-menu-area .activeWrap2 > li > a').removeClass("bounceInLeft");
+                    $('ul.anaMenu.full-menu-area .active > ul').fadeIn();
+                    $('ul.anaMenu.full-menu-area .active > ul').css("margin-top", -($('.active > ul').height() / 2))
+                    $('ul.anaMenu.full-menu-area .active > ul').removeClass("bounceOutRight");
+                    $('ul.anaMenu.full-menu-area .active > ul').addClass('bounceInRight');
+                    $('.back-button').removeClass("dNone");
+                    $('.back-button').fadeIn();
+
+                });
+
+                $('ul.anaMenu.full-menu-area li.dropdown-menu .first2').click(function () {
+                    event.preventDefault();
+                    $(this).parent().addClass("active2");
+
+                    $('.active2').addClass("aktif");
+                    $('.active2').parent().addClass("activeWrap2");
+
+                    $('.activeWrap2').removeClass('bounceInRight');
+
+                    $('.activeWrap2 > li > a').removeClass('bounceOutLeft').removeClass('bounceInLeft');
+                    $('.activeWrap2 > .active2 > ul').removeClass('bounceInRight');
+
+                    $('.activeWrap2 > li > a').addClass('bounceOutLeft');
+                    $('.activeWrap2 > .active2 > ul').fadeIn();
+
+                    $('.activeWrap2 > .active2 > ul').removeClass('bounceOutRight');
+                    $('.activeWrap2 > .active2 > ul').addClass('bounceInRight');
+
+                    $('ul.anaMenu.full-menu-area > li > ul > li > ul').each(function () {
+                        $(this).css("margin-top", -($(this).height() / 2));
+
+                    });
+                });
+
+                $('.back-button').click(function () {
+                    if ($('.dropdown-menu').hasClass("aktif")) {
+                        //alert("ddddd");
+                        $('.active2 > ul').removeClass('bounceInRight').addClass("bounceOutRight");
+                        $('.active2 > ul').fadeOut();
+                        $('.activeWrap2 > li > a').removeClass("bounceOutLeft").addClass("bounceInLeft");
+                        $('.active2').removeClass("active");
+                        $('.activeWrap2').removeClass("activeWrap");
+                        $('.aktif').removeClass("aktif");
+                        $('.active2').removeClass("active2");///////
+
+                    } else {
+                        $('.active > ul').removeClass('bounceInRight').addClass("bounceOutRight");
+                        $('.active > ul').fadeOut();
+                        $('.activeWrap > li > a').removeClass("bounceOutLeft").addClass("bounceInLeft");
+                        $('.active').removeClass("active");
+                        $('.activeWrap').removeClass("activeWrap");
+
+                    }
+
+                });
+                $('.aramaKutusu').focus(function () {
+                    //$('ul.anaMenu').addClass("dropMenu");
+                    $('ul.anaMenu.full-menu-area').removeClass("full-menu");
+
+                });
+            });
+   </script>
+   <script src="/WebResource.axd?d=gomwMYnBwZ5xjNZN0KkbPfcP2bIGaXK1qhOK2ORF09UWQ72TqYMFKSvnuvaODzt2DhYJ6t_9Y3dJBiW_9yeJoqxrJrFLea-0T7Cy95F7-3w1&amp;t=637454140754849868" type="text/javascript">
+   </script>
+  </form>
+  <style type="text/css">
+   .aramaMenu ul.anaMenu > li {
+            width: 100%;
+            display: inline-block;
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+            border-right: 0 !important;
+        }
+
+        .aramaMenu.dropdown {
+            display: block;
+            position: absolute;
+            /* top: 130px; */
+            top: 64px;
+            max-height: 0;
+            width: 100%;
+            transition: all 600ms;
+            left: 50%;
+            margin-left: -50%;
+        }
+
+            .aramaMenu.dropdown ul {
+                border: 1px solid #ddd;
+                border-bottom: 0;
+                background: rgba(255, 255, 255, 0.85);
+            }
+
+        ul.anaMenu.full-menu-area > li > ul {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+        }
+
+        ul.anaMenu.full-menu-area a {
+            cursor: pointer;
+        }
+
+        ul.anaMenu.full-menu-area > li > ul li a {
+            padding: 20px 10px;
+            color: #333;
+            -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+            transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+            font-weight: 900;
+            font-size: 25px;
+            letter-spacing: 20px;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+        }
+
+            ul.anaMenu.full-menu-area > li > ul li a:hover::before {
+                transform: scaleX(250);
+                background: #000;
+            }
+
+            ul.anaMenu.full-menu-area > li > ul li a::before {
+                content: '';
+                position: absolute;
+                height: 2px;
+                background: #000;
+                -webkit-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                bottom: 0;
+                margin-top: 0;
+                transform-origin: center center;
+                width: 1px;
+                left: 50%;
+                background: rgba(0, 0, 0, 0);
+                margin-left: -10px;
+            }
+
+        ul.anaMenu.full-menu-area > li > ul > li > ul {
+            display: none;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+
+        ul.anaMenu.full-menu-area > li > ul {
+            max-height: 500px;
+        }
+
+        .back-button.dNone {
+            display: none !important;
+        }
+
+        .dNone {
+            display: none !important;
+        }
+  </style>
+  <script>
+   $(document).ready(function () {
+            window.mobilecheck = function () {
+                var check = false;
+                (function (a) { if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true; })(navigator.userAgent || navigator.vendor || window.opera);
+                return check;
+            };
+            if (mobilecheck() == true) {
+                $('.aramaMenu.dropdown').addClass("dNone");
+            } else {
+            }
+        })
+  </script>
+ </body>
+</html>

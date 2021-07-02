@@ -21,14 +21,15 @@ with open('site_list.json', "r") as json_file:
 
 for site in data["site"]:
     r = session.get(site)
-    req = requests.get(site)
-    soup = BeautifulSoup(r.text)    
+    # req = requests.get(site)
+    soup = BeautifulSoup(r.text, features="lxml")    
     full_html = soup.prettify()
     filename = re.search(pattern, site)
-    text_file = open(f"{filename.group(1)}_baseHTML.txt", "w")
+    text_file = open(f"{filename.group(1)}_baseHTML.txt", "w" , encoding="utf-8")
     n = text_file.write(full_html)
     text_file.close()
-    os.replace(f'{dir}{filename.group(1)}_base.txt', f'{dir}{based_html_dir}/{filename.group(1)}_base.txt')
+    # os.replace(f'{dir}{filename.group(1)}_baseHTML.txt', f'{dir}{based_html_dir}')
+    os.replace(f'{dir}{filename.group(1)}_baseHTML.txt', f'{dir}{based_html_dir}/{filename.group(1)}_baseHTML.txt')
     print(f'{filename.group(1)} base image tasindi')
 
 
