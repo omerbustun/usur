@@ -24,9 +24,8 @@ htmlcov/
 .coverage.*
 *,cover
 
-# test1.py
-# test2.py
-# *.png
-# *.exe
-# .vscode 
-# __pycache__
+
+ *.png
+ *.exe
+ .vscode 
+ __pycache__
