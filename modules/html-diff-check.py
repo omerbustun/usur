@@ -26,7 +26,7 @@ def get_base_html(site):
 	#html = response.content
 	soup = BeautifulSoup(response.content, 'html.parser')
 
-	f = open(base_html, "x")
+	f = open(base_html, "w")
 	f.write(str(soup.prettify()))
 	f.close()
 
