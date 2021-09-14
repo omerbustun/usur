@@ -1,4 +1,4 @@
-# urus
+# usur
 Şirketin sitelerinin ön ve arka yüzünü periyodik olarak kontrol edip herhangi bir değişim durumunda e-posta ile bildirim gönderen yapı.
 
 ## Özellikler
