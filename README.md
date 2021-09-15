@@ -1,8 +1,8 @@
 # Usur
-A tool that periodically checks the front and back of web servers and sends notifications by e-mail or other methods in case of any change.
+A tool that periodically checks the front and backend of web servers and sends notifications by e-mail or other methods in case of any change.
 
 #### Meaning
-usur means "watch over" in old Turkish.
+Usur means "watch over" in old Turkish.
 
 ## To-Do
 
