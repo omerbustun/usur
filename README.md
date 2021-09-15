@@ -1,28 +1,20 @@
 # usur
-Şirketin sitelerinin ön ve arka yüzünü periyodik olarak kontrol edip herhangi bir değişim durumunda e-posta ile bildirim gönderen yapı.
+A tool that periodically checks the front and back of web servers and sends notifications by e-mail or other methods in case of any change.
 
-## Özellikler
+## To-Do
 
-- Site adreslerini JSON dosyasından okuma :heavy_check_mark:
-- Selenium ile bu sitelerin anasayfalarının ekran görüntünüsünü alarak ilgili klasöre kaydetme :heavy_check_mark:
-- OpenCV aracılığıyla güncel görüntüyü referans görüntü ile karşılaştırma :heavy_check_mark:
-- Condig dosyası eklenicek :heavy_check_mark:
+- Reading site addresses from JSON file :heavy_check_mark:
+- Take a screenshot of the homepage of these sites with Selenium and save it to the relevant folder :heavy_check_mark:
+- Comparing the current image with the reference image via OpenCV :heavy_check_mark:
+- Global config file :heavy_check_mark:
 - HTML diff check :heavy_check_mark:
-- Fark tespit ettiği durumda e-posta ile bildirim gönderme
-- Veri tabanı entegrasyonu
-- Web panel üzerinden istatistik sunma
-- Multi-site desteği
-- Cross-Platform desteği
-- Moduler yapı
+- Modular structure :heavy_check_mark:
+- Sending notification by e-mail in case of detecting a difference
+- Database integration
+- Presenting statistics via web panel
+- Multi-site support :heavy_check_mark:
+- Cross-platform support with Docker image :heavy_check_mark:
 
-
-## Dashboard Özellikler
-
-- Takip edilicek sitelerin eklenme ve çıkarılabilmesi.
-- Arşiv fotoğraflarının görüntülenebilmesi.
-- Sign-in
-- Log Ekranı
-- Site özelinde tarama periodu ayarı
 
 ### Activate Virtual Env
 ```
