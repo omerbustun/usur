@@ -1,6 +1,9 @@
 # usur
 A tool that periodically checks the front and back of web servers and sends notifications by e-mail or other methods in case of any change.
 
+### Meaning
+usur means "to lookout" in old Turkish.
+
 ## To-Do
 
 - Reading site addresses from JSON file :heavy_check_mark:
