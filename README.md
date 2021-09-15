@@ -6,17 +6,17 @@ Usur means "watch over" in old Turkish.
 
 ## To-Do
 
-- [x] Reading site addresses from JSON file :heavy_check_mark:
-- [x] Take a screenshot of the homepage of these sites with Selenium and save it to the relevant folder :heavy_check_mark:
-- [x] Comparing the current image with the reference image via OpenCV :heavy_check_mark:
-- [x] Global config file :heavy_check_mark:
-- [x] HTML diff check :heavy_check_mark:
-- [x] Modular structure :heavy_check_mark:
+- [x] Reading site addresses from JSON file 
+- [x] Take a screenshot of the homepage of these sites with Selenium and save it to the relevant folder
+- [x] Comparing the current image with the reference image via OpenCV 
+- [x] Global config file 
+- [x] HTML diff check 
+- [x] Modular structure
 - [ ] Sending notification by e-mail in case of detecting a difference
 - [ ] Database integration
 - [ ] Presenting statistics via web panel
-- [x] Multi-site support :heavy_check_mark:
-- [x] Cross-platform support with Docker image :heavy_check_mark:
+- [x] Multi-site support 
+- [x] Cross-platform support with Docker image 
 
 
 ### Activate Virtual Env
