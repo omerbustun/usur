@@ -1,11 +1,12 @@
-# Usur
- **A tool that periodically checks the front and backend of web servers and sends notifications by e-mail or other methods in case of any change.**
+# 👁️ Usur
+
+## A tool that periodically checks the front and backend of web servers and sends notifications by e-mail or other methods in case of any change.
 
 
-#### Meaning
+#### ✍🏼 Meaning
 Usur means "watch over" in old Turkish.
 
-## To-Do
+## 📖 To-Do
 
 - [x] Reading site addresses from JSON file 
 - [x] Take a screenshot of the homepage of these sites with Selenium and save it to the relevant folder
