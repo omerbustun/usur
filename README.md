@@ -1,8 +1,8 @@
-# 👁️ Usur
 ![GitHub last commit](https://img.shields.io/github/last-commit/omerbustun/usur?logo=Github)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/omerbustun/usur?logo=Github)
 ![GitHub Repo stars](https://img.shields.io/github/stars/omerbustun/usur?style=social)
-## A tool that periodically checks the front and backend of web servers and sends notifications by e-mail or other methods in case of any change.
+# 👁️ Usur
+A tool that periodically checks the front and backend of web servers and sends notifications by e-mail or other methods in case of any change.
 
 
 #### ✍🏼 Meaning
