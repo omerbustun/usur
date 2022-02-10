@@ -3,7 +3,7 @@ import requests,os
 from bs4 import BeautifulSoup
 
 # VARIABLE TO BE TAKEN
-site = "https://tedu.edu.tr" 
+site = "google.com" 
 
 # 4 FILE WITHOUT ':'
 x = site.index(":")
