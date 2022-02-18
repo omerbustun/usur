@@ -13,7 +13,7 @@ Usur means "watch over" in old Turkish.
 - [x] Reading site addresses from JSON file 
 - [x] Take a screenshot of the homepage of these sites with Selenium and save it to the relevant folder
 - [x] Comparing the current image with the reference image via OpenCV 
-- [!] Global config file 
+- [ ] Global config file 
 - [x] HTML diff check 
 - [x] Modular structure
 - [ ] Sending notification by e-mail in case of detecting a difference
